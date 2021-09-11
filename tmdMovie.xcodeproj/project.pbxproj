@@ -19,6 +19,7 @@
 		8DD0370126EC15E1005D4296 /* UpComing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370026EC15E1005D4296 /* UpComing.swift */; };
 		8DD0370326EC16A2005D4296 /* MovieNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370226EC16A2005D4296 /* MovieNetworkServices.swift */; };
 		8DD0370626EC2030005D4296 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370526EC2030005D4296 /* MD5.swift */; };
+		8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370726EC3CF7005D4296 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8DD0370026EC15E1005D4296 /* UpComing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComing.swift; sourceTree = "<group>"; };
 		8DD0370226EC16A2005D4296 /* MovieNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworkServices.swift; sourceTree = "<group>"; };
 		8DD0370526EC2030005D4296 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		8DD0370726EC3CF7005D4296 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				8DD036FC26EC15AC005D4296 /* Popular.swift */,
 				8DD036FE26EC15C9005D4296 /* TopRated.swift */,
 				8DD0370026EC15E1005D4296 /* UpComing.swift */,
+				8DD0370726EC3CF7005D4296 /* APIError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */,
 				8DD036FD26EC15AC005D4296 /* Popular.swift in Sources */,
 				8DD036FF26EC15C9005D4296 /* TopRated.swift in Sources */,
+				8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */,
 				8DD0370326EC16A2005D4296 /* MovieNetworkServices.swift in Sources */,
 				8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */,
 				8DD0370626EC2030005D4296 /* MD5.swift in Sources */,

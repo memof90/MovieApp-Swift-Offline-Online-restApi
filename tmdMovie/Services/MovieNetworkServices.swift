@@ -13,7 +13,7 @@ class MovieNetworkServices {
     
     let session = URLSession(configuration: .default)
    
-    func fetchPopularMovies(searchTerm: String,onSucees: @escaping (ResultsPopular) -> Void, onError: @escaping (String) -> Void ) {
+    func fetchPopularMovies(searchTerm: String,onSucees: @escaping (Movie) -> Void, onError: @escaping (String) -> Void ) {
         let token = "5fff233cf139639b37ee955e7a852f34"
         let URL_BASE = "https://api.themoviedb.org/3/movie/\(searchTerm)?api_key=\(token)&language=en-US"
         
@@ -27,12 +27,27 @@ class MovieNetworkServices {
                     onError(error.localizedDescription)
                     return
                 }
-//                print(String(data: data!, encoding: .utf8))
+                print(String(data: data!, encoding: .utf8))
                 guard let data = data, let response = response as? HTTPURLResponse else {
                     onError("Invalid data or reponse")
                     return
                 }
                 
+//            MARK: We have to handle 500 or 400 errors or 200 success
+                do {
+                    if response.statusCode == 200 {
+                        let movieData = try JSONDecoder().decode(Movie.self, from: data)
+                        print(movieData)
+                    } else {
+//                        show error to user
+                    let err = try JSONDecoder().decode(APIError.self, from: data)
+                  //                    handle erorr
+                    onError(err.message)
+                    }
+                    
+                } catch {
+                    onError(error.localizedDescription)
+                }
                
             }
         }
