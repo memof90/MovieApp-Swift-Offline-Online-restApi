@@ -12,9 +12,9 @@ import UIKit
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
 let myPersisterContainer =  appDelegate?.persistentContainer
 
-//struct ResultsPopular {
-//    let results : [Movie]
-//}
+struct ResultsPopular : Decodable {
+    let results : [Movie]
+}
 
 
 
