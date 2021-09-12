@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let database = DatabaseHandler()
 
     override func viewDidLoad() {
         super.viewDidLoad()
