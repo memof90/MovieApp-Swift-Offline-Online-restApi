@@ -38,7 +38,7 @@
     </entity>
     <elements>
         <element name="Movie" positionX="-8.163330078125" positionY="22.01351928710938" width="128" height="253"/>
-        <element name="Result" positionX="-287.866943359375" positionY="8.438507080078125" width="117.980224609375" height="103"/>
         <element name="Movies" positionX="-144" positionY="126" width="128" height="209"/>
+        <element name="Result" positionX="-287.866943359375" positionY="8.438507080078125" width="117.980224609375" height="103"/>
     </elements>
 </model>

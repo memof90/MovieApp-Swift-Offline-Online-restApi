@@ -9,32 +9,66 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let database = DatabaseHandler()
+
+    
+//    MARK: - IBOutlet
+    @IBOutlet weak var  tableView : UITableView!
+    
+    let database = DatabaseHandler.shared
+    
+//    var movies = [Movies]()
+    var movies : [Movies]? {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+      
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        getMovies()
-        getMov()
-    }
-
-    func getMovies () {
-//        MovieNetworkServices.shared.fetchPopularMovies(searchTerm: "popular") { (movie) in
-//            print(movie)
-//        } onError: { (errorMessage) in
-//            print(errorMessage)
-//        }
-
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UserTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
-    func getMov() {
-        MovieNetworkServices.shared.fecthPopular(searchTerm: "popular") { (results, err) in
-            if let err = err {
-                print("Failed to fetch apps:", err)
-                return
-            }
-            print(results)
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkServiesMovies.shared.sycnUsers(searchTerm: "popular") {
+            self.movies = self.database.fetch(Movies.self)
         }
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //        let results = database.fetch(Movies.self)
+        //        print(results.map { $0.title})
+                movies = database.fetch(Movies.self)
+    }
+    
+ 
+
+
+}
+
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell")!
+        cell.textLabel?.text = movies?[indexPath.row].title
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    
 }
 

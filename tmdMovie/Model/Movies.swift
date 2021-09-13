@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 public class Movies: NSManagedObject {
-    @NSManaged var adult : Bool
+//    @NSManaged var adult : Bool
     @NSManaged var backdrop_path : String
     @NSManaged var id : Int32
     @NSManaged var original_language : String
