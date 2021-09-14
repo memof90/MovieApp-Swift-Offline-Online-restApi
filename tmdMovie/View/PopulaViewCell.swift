@@ -27,19 +27,25 @@ class PopulaViewCell: UICollectionViewCell {
         return label
     }()
     
-//   MARK: - categoriyLabel
-    let categoriyLabel: UILabel = {
-        let categoryLabel = UILabel()
-        categoryLabel.text = "Adult"
-        return categoryLabel
-    }()
+
     
-    //    Rating label
+// MARK:-  Rating label
         let ratingLabel: UILabel = {
             let ratingLabel = UILabel()
             ratingLabel.text = "9.26M"
+            ratingLabel.font = .boldSystemFont(ofSize: 15)
+            ratingLabel.textColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 0.64)
             return ratingLabel
         }()
+    
+// MARK:-  date label
+            let dateLabel: UILabel = {
+                let dateLabel = UILabel()
+                dateLabel.text = "2019-08-2021"
+                dateLabel.font = .boldSystemFont(ofSize: 15)
+                dateLabel.textColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 0.64)
+                return dateLabel
+            }()
     
 //    MARK: - Button WatchList
     let getWhatchButton: UIButton = {
@@ -59,8 +65,17 @@ class PopulaViewCell: UICollectionViewCell {
         backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         
         // MARK: - Stack View contentLabel
+        
+        let labelStackViewDescription = UIStackView(arrangedSubviews: [
+         ratingLabel, dateLabel
+        ])
+        labelStackViewDescription.axis = .horizontal
+        labelStackViewDescription.alignment = .center
+        labelStackViewDescription.spacing = 10
+        
+        
         let labelStackView = UIStackView(arrangedSubviews: [
-            nameLabel, categoriyLabel, ratingLabel,getWhatchButton
+            nameLabel, labelStackViewDescription ,getWhatchButton
         ])
         
         labelStackView.axis = .vertical
@@ -77,7 +92,7 @@ class PopulaViewCell: UICollectionViewCell {
         addSubview(stackView)
         
         //        contrainst
-        stackView.fillSuperview(padding: .init(top: 20, left: 20, bottom: 20, right: 20))
+        stackView.fillSuperview(padding: .init(top: 15, left: 15, bottom: 15, right: 15))
     }
     
     
