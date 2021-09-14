@@ -21,8 +21,9 @@ class NetworkServiesMovies {
             print(response!)
             do {
                 let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                print(json)
+//                print(json)
                 let model = try JSONDecoder().decode(APIResponse<[MoviesServiceModel]>.self, from: data!)
+
 //                Save Data Database Local
                 model.results.forEach { $0.store()}
                 completion()

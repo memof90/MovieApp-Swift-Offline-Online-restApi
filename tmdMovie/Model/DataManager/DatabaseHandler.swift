@@ -49,5 +49,10 @@ class DatabaseHandler {
         }
     }
     
+//    func delete<T: NSManagedObject>(object: T) {
+//        viewContext.delete(object)
+//        save()
+//    }
+    
     
 }

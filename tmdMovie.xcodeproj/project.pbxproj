@@ -11,6 +11,10 @@
 		8D19513126ED8EBA008BA371 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19513026ED8EBA008BA371 /* DatabaseHandler.swift */; };
 		8D301EDF26EFC9F800F5C66F /* NetworkServicesMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EDE26EFC9F800F5C66F /* NetworkServicesMovies.swift */; };
 		8D301EE126EFCFA500F5C66F /* MoviesServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EE026EFCFA500F5C66F /* MoviesServiceModel.swift */; };
+		8D301EE326F005B700F5C66F /* BaseTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EE226F005B600F5C66F /* BaseTabController.swift */; };
+		8D301EE626F0161200F5C66F /* PopularController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EE526F0161200F5C66F /* PopularController.swift */; };
+		8D301EE826F019B600F5C66F /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EE726F019B600F5C66F /* BaseListController.swift */; };
+		8D301EEA26F01B9E00F5C66F /* PopulaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EE926F01B9E00F5C66F /* PopulaViewCell.swift */; };
 		8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E126EC0E68005D4296 /* AppDelegate.swift */; };
 		8DD036E426EC0E68005D4296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E326EC0E68005D4296 /* SceneDelegate.swift */; };
 		8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E526EC0E68005D4296 /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 		8D19513026ED8EBA008BA371 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		8D301EDE26EFC9F800F5C66F /* NetworkServicesMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesMovies.swift; sourceTree = "<group>"; };
 		8D301EE026EFCFA500F5C66F /* MoviesServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesServiceModel.swift; sourceTree = "<group>"; };
+		8D301EE226F005B600F5C66F /* BaseTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabController.swift; sourceTree = "<group>"; };
+		8D301EE526F0161200F5C66F /* PopularController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularController.swift; sourceTree = "<group>"; };
+		8D301EE726F019B600F5C66F /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
+		8D301EE926F01B9E00F5C66F /* PopulaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulaViewCell.swift; sourceTree = "<group>"; };
 		8DD036DE26EC0E68005D4296 /* tmdMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD036E126EC0E68005D4296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD036E326EC0E68005D4296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +73,14 @@
 				8D19513026ED8EBA008BA371 /* DatabaseHandler.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		8D301EE426F015DE00F5C66F /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				8D301EE526F0161200F5C66F /* PopularController.swift */,
+			);
+			path = Popular;
 			sourceTree = "<group>";
 		};
 		8DD036D526EC0E67005D4296 = {
@@ -119,6 +135,7 @@
 		8DD036F926EC1582005D4296 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D301EE926F01B9E00F5C66F /* PopulaViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +143,9 @@
 		8DD036FA26EC1588005D4296 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8D301EE426F015DE00F5C66F /* Popular */,
+				8D301EE226F005B600F5C66F /* BaseTabController.swift */,
+				8D301EE726F019B600F5C66F /* BaseListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,8 +247,12 @@
 				8DD036FF26EC15C9005D4296 /* TopRated.swift in Sources */,
 				8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */,
 				8DD0370326EC16A2005D4296 /* MovieNetworkServices.swift in Sources */,
+				8D301EE626F0161200F5C66F /* PopularController.swift in Sources */,
 				8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */,
+				8D301EEA26F01B9E00F5C66F /* PopulaViewCell.swift in Sources */,
 				8DD0370626EC2030005D4296 /* MD5.swift in Sources */,
+				8D301EE826F019B600F5C66F /* BaseListController.swift in Sources */,
+				8D301EE326F005B700F5C66F /* BaseTabController.swift in Sources */,
 				8DD0370126EC15E1005D4296 /* UpComing.swift in Sources */,
 				8DD036EC26EC0E68005D4296 /* tmdMovie.xcdatamodeld in Sources */,
 				8DD036E426EC0E68005D4296 /* SceneDelegate.swift in Sources */,

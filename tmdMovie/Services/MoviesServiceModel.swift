@@ -28,6 +28,14 @@ struct MoviesServiceModel : Codable {
         guard let movies = MoviesServiceModel.database.add(Movies.self) else {
             return
         }
+//        let moviesId = movies.id
+//        guard let id = moviesId as Int32? else {
+//            return
+//        }
+//        if id == 0 {return}
+//        let predicate = NSPredicate.init(format: "id == %i", id)
+        
+        
         movies.backdrop_path = backdrop_path
         movies.id = Int32(id)
         movies.original_language = original_language
