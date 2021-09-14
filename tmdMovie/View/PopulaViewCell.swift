@@ -77,12 +77,7 @@ class PopulaViewCell: UICollectionViewCell {
         addSubview(stackView)
         
         //        contrainst
-                stackView.translatesAutoresizingMaskIntoConstraints = false
-                stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-                stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-                stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-                stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
-            
+        stackView.fillSuperview(padding: .init(top: 20, left: 20, bottom: 20, right: 20))
     }
     
     
