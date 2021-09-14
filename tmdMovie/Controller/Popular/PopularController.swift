@@ -8,7 +8,7 @@
 import UIKit
 
 
-class PopularViewController: BaseListController, UICollectionViewDelegateFlowLayout {
+class PopularViewController: BaseListController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
 //    MARK:- Identifier Cell
     fileprivate let cellId = "id1234"
@@ -26,11 +26,39 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         }
     }
     
+//   MARK: - SearchBar
+    fileprivate let searchController = UISearchController(searchResultsController: nil)
+    fileprivate let enterSearchTermLabel: UILabel = {
+            let label = UILabel()
+            label.text  = "Please enter your movie Search"
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
 //        Allow register identifier cell
         collectionView.register(PopulaViewCell.self, forCellWithReuseIdentifier: cellId)
+        setupSearchBar()
+    }
+    
+//    MARK: - setupSearchBar
+    fileprivate func setupSearchBar() {
+        definesPresentationContext = true
+        navigationItem.searchController = self.searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
+    }
+    
+//    MARK: - Action to reloadTime Searching
+    //    timer to reload data
+        var timer: Timer?
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
     }
     
 //    MARK: Save Data to Api to Core Data Model
