@@ -6,17 +6,46 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PopulaViewCell: UICollectionViewCell {
+    
+    var movies: Movies? {
+        didSet {
+            setupData()
+        }
+    }
+    
+    func setupData() {
+        guard let movies = movies else { return }
+        if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.poster_path)") {
+            imagePath.sd_setImage(with: url)
+        }
+        
+        nameLabel.text = movies.title
+        ratingLabel.text = movies.vote_average.toString()
+        dateLabel.text = movies.release_date
+        
+    }
+    
+    override func prepareForReuse() {
+        imagePath.image = nil
+        nameLabel.text = nil
+        ratingLabel.text = nil
+        dateLabel.text = nil
+    }
 
     
 //    MARK: - Image
     let imagePath: UIImageView = {
        let iv = UIImageView()
-        iv.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        iv.layer.cornerRadius = 8
+        iv.clipsToBounds = true
         iv.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        iv.heightAnchor.constraint(equalToConstant: 150).isActive = true
-        iv.layer.cornerRadius = 12
+        iv.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        iv.layer.borderWidth = 0.5
+        iv.layer.borderColor = UIColor(white: 0.5, alpha: 0.5).cgColor
+        iv.contentMode = .scaleAspectFill
         return iv
     }()
 
@@ -34,7 +63,7 @@ class PopulaViewCell: UICollectionViewCell {
             let ratingLabel = UILabel()
             ratingLabel.text = "9.26M"
             ratingLabel.font = .boldSystemFont(ofSize: 15)
-            ratingLabel.textColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 0.64)
+            ratingLabel.textColor = #colorLiteral(red: 0.7540688515, green: 0.7540867925, blue: 0.7540771365, alpha: 1)
             return ratingLabel
         }()
     
@@ -42,7 +71,7 @@ class PopulaViewCell: UICollectionViewCell {
     let imageIcon: UIImageView = {
         let imageIcon = UIImageView()
         imageIcon.image = UIImage(systemName: "star.fill")
-        imageIcon.tintColor = .yellow
+        imageIcon.tintColor = #colorLiteral(red: 1, green: 0.9022858502, blue: 0, alpha: 1)
         return imageIcon
     }()
     
@@ -51,7 +80,7 @@ class PopulaViewCell: UICollectionViewCell {
                 let dateLabel = UILabel()
                 dateLabel.text = "2019-08-2021"
                 dateLabel.font = .boldSystemFont(ofSize: 15)
-                dateLabel.textColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 0.64)
+                dateLabel.textColor = #colorLiteral(red: 0.7540688515, green: 0.7540867925, blue: 0.7540771365, alpha: 1)
                 return dateLabel
             }()
     
@@ -70,8 +99,8 @@ class PopulaViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        
+//        backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+//        
         // MARK: - Stack View contentLabel
         
         let stackLabelStart = UIStackView(arrangedSubviews: [
