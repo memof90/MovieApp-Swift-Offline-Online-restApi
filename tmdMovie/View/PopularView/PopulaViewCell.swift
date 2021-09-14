@@ -38,6 +38,14 @@ class PopulaViewCell: UICollectionViewCell {
             return ratingLabel
         }()
     
+// MARK: - Icon
+    let imageIcon: UIImageView = {
+        let imageIcon = UIImageView()
+        imageIcon.image = UIImage(systemName: "star.fill")
+        imageIcon.tintColor = .yellow
+        return imageIcon
+    }()
+    
 // MARK:-  date label
             let dateLabel: UILabel = {
                 let dateLabel = UILabel()
@@ -66,8 +74,12 @@ class PopulaViewCell: UICollectionViewCell {
         
         // MARK: - Stack View contentLabel
         
+        let stackLabelStart = UIStackView(arrangedSubviews: [
+        imageIcon,ratingLabel
+        ])
+        stackLabelStart.spacing = 5
         let labelStackViewDescription = UIStackView(arrangedSubviews: [
-         ratingLabel, dateLabel
+        stackLabelStart,dateLabel
         ])
         labelStackViewDescription.axis = .horizontal
         labelStackViewDescription.alignment = .center

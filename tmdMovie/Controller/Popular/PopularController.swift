@@ -35,30 +35,32 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
     
 //    MARK: Save Data to Api to Core Data Model
     override func viewDidAppear(_ animated: Bool) {
-        NetworkServiesMovies.shared.sycnUsers(searchTerm: "popular") {
-            self.movies = self.database.fetch(Movies.self)
-        }
+//        NetworkServiesMovies.shared.sycnUsers(searchTerm: "popular") {
+//            self.movies = self.database.fetch(Movies.self)
+//        }
     }
         
 //        MARK: Fetch data to Core Data
         override func viewWillAppear(_ animated: Bool) {
             //        let results = database.fetch(Movies.self)
             //        print(results.map { $0.title})
-                    movies = database.fetch(Movies.self)
+//                    movies = database.fetch(Movies.self)
         }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 350)
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movies?.count ?? 0
+//        return movies?.count ?? 0
+        return 5
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PopulaViewCell
-        cell.nameLabel.text = movies?[indexPath.row].title
-        cell.dateLabel.text = movies?[indexPath.row].release_date
-        cell.ratingLabel.text = movies?[indexPath.row].vote_average.toString()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PopulaViewCell
+//        cell.nameLabel.text = movies?[indexPath.row].title
+//        cell.dateLabel.text = movies?[indexPath.row].release_date
+//        cell.ratingLabel.text = movies?[indexPath.row].vote_average.toString()
         return cell
     }
 }
