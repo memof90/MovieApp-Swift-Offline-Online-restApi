@@ -10,7 +10,7 @@ import SDWebImage
 
 class PopulaViewCell: UICollectionViewCell {
     
-    var movies: Movies? {
+    var movies: Popular? {
         didSet {
             setupData()
         }

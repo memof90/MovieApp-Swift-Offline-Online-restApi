@@ -11,7 +11,7 @@ class NetworkServiesMovies {
     
     static var shared = NetworkServiesMovies()
     let session = URLSession(configuration: .default)
-    func sycnUsers(searchTerm: String,completion: @escaping (()-> Void)) {
+    func sycnPopular(searchTerm: String,completion: @escaping (()-> Void)) {
         let token = "5fff233cf139639b37ee955e7a852f34"
         let URL_BASE = "https://api.themoviedb.org/3/movie/\(searchTerm)?api_key=\(token)&language=en-US"
         guard let url = URL(string: URL_BASE) else {return}
@@ -22,7 +22,31 @@ class NetworkServiesMovies {
             do {
                 let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
 //                print(json)
-                let model = try JSONDecoder().decode(APIResponse<[MoviesServiceModel]>.self, from: data!)
+                let model = try JSONDecoder().decode(APIResponse<[PopularServiceModel]>.self, from: data!)
+
+//                Save Data Database Local
+                model.results.forEach { $0.store()}
+                completion()
+            } catch {
+                print(error)
+                completion()
+            }
+        }
+        task.resume()
+    }
+    
+    func sycnTopRated(searchTerm: String,completion: @escaping (()-> Void)) {
+        let token = "5fff233cf139639b37ee955e7a852f34"
+        let URL_BASE = "https://api.themoviedb.org/3/movie/\(searchTerm)?api_key=\(token)&language=en-US"
+        guard let url = URL(string: URL_BASE) else {return}
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let task = session.dataTask(with: request) { data, response, error in
+            print(response!)
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+//                print(json)
+                let model = try JSONDecoder().decode(APIResponse<[TopRatedServiceModel]>.self, from: data!)
 
 //                Save Data Database Local
                 model.results.forEach { $0.store()}

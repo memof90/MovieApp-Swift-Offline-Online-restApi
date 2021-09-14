@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     let database = DatabaseHandler.shared
     
 //    var movies = [Movies]()
-    var movies : [Movies]? {
+    var movies : [Popular]? {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -35,8 +35,8 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        NetworkServiesMovies.shared.sycnUsers(searchTerm: "popular") {
-            self.movies = self.database.fetch(Movies.self)
+        NetworkServiesMovies.shared.sycnPopular(searchTerm: "popular") {
+            self.movies = self.database.fetch(Popular.self)
         }
         
     }
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         //        let results = database.fetch(Movies.self)
         //        print(results.map { $0.title})
-                movies = database.fetch(Movies.self)
+                movies = database.fetch(Popular.self)
     }
     
  

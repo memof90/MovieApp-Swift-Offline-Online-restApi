@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-public class Movies: NSManagedObject {
+public class Popular: NSManagedObject {
 //    @NSManaged var adult : Bool
     @NSManaged var backdrop_path : String
     @NSManaged var id : Int32

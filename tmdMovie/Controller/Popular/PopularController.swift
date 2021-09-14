@@ -17,7 +17,7 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
     let database = DatabaseHandler.shared
     
 //    MARK: - Reload collectionView
-    var movies : [Movies]? {
+    var movies : [Popular]? {
         didSet {
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
@@ -35,8 +35,8 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
     
 //    MARK: Save Data to Api to Core Data Model
     override func viewDidAppear(_ animated: Bool) {
-        NetworkServiesMovies.shared.sycnUsers(searchTerm: "popular") {
-            self.movies = self.database.fetch(Movies.self)
+        NetworkServiesMovies.shared.sycnPopular(searchTerm: "popular") {
+            self.movies = self.database.fetch(Popular.self)
         }
     }
         
@@ -44,15 +44,15 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         override func viewWillAppear(_ animated: Bool) {
             //        let results = database.fetch(Movies.self)
             //        print(results.map { $0.title})
-                    movies = database.fetch(Movies.self)
+                    movies = database.fetch(Popular.self)
         }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 350)
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return movies?.count ?? 0
-        return 5
+        return movies?.count ?? 0
+//        return 5
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

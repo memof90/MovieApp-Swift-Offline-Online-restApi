@@ -16,7 +16,7 @@
         <relationship name="topRatedResult" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Result" inverseName="topRated" inverseEntity="Result"/>
         <relationship name="upComingResult" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Result" inverseName="upComing" inverseEntity="Result"/>
     </entity>
-    <entity name="Movies" representedClassName=".Movies" syncable="YES">
+    <entity name="Popular" representedClassName=".Popular" syncable="YES">
         <attribute name="adult" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="backdrop_path" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -36,9 +36,37 @@
         <relationship name="topRated" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Movie" inverseName="topRatedResult" inverseEntity="Movie"/>
         <relationship name="upComing" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Movie" inverseName="upComingResult" inverseEntity="Movie"/>
     </entity>
+    <entity name="TopRated" representedClassName=".TopRated" syncable="YES">
+        <attribute name="backdrop_path" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="original_language" optional="YES" attributeType="String"/>
+        <attribute name="original_title" optional="YES" attributeType="String"/>
+        <attribute name="overview" optional="YES" attributeType="String"/>
+        <attribute name="popularity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="poster_path" optional="YES" attributeType="String"/>
+        <attribute name="release_date" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="vote_average" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vote_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Upcomig" representedClassName=".Upcomig" syncable="YES">
+        <attribute name="backdrop_path" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="original_language" optional="YES" attributeType="String"/>
+        <attribute name="original_title" optional="YES" attributeType="String"/>
+        <attribute name="overview" optional="YES" attributeType="String"/>
+        <attribute name="popularity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="poster_path" optional="YES" attributeType="String"/>
+        <attribute name="release_date" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="vote_average" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vote_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <elements>
         <element name="Movie" positionX="-8.163330078125" positionY="22.01351928710938" width="128" height="253"/>
-        <element name="Movies" positionX="-144" positionY="126" width="128" height="209"/>
+        <element name="Popular" positionX="-144" positionY="126" width="128" height="209"/>
         <element name="Result" positionX="-287.866943359375" positionY="8.438507080078125" width="117.980224609375" height="103"/>
+        <element name="TopRated" positionX="-144" positionY="153" width="128" height="194"/>
+        <element name="Upcomig" positionX="-135" positionY="171" width="128" height="194"/>
     </elements>
 </model>

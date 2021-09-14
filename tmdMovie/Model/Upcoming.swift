@@ -1,14 +1,14 @@
 //
-//  TopRated.swift
+//  Upcoming.swift
 //  tmdMovie
 //
-//  Created by Memo Figueredo on 10/9/21.
+//  Created by Memo Figueredo on 14/9/21.
 //
 
 import Foundation
 import CoreData
 
-public class TopRated: NSManagedObject {
+public class Upcomig: NSManagedObject {
 //    @NSManaged var adult : Bool
     @NSManaged var backdrop_path : String
     @NSManaged var id : Int32

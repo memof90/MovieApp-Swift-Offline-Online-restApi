@@ -1,14 +1,14 @@
 //
-//  MoviesServiceModel.swift
+//  TopRatedServicesModel.swift
 //  tmdMovie
 //
-//  Created by Memo Figueredo on 13/9/21.
+//  Created by Memo Figueredo on 14/9/21.
 //
 
 import Foundation
 
 
-struct MoviesServiceModel : Codable {
+struct TopRatedServiceModel : Codable {
 //    let adult : Bool
     let backdrop_path : String
     let id: Int
@@ -25,7 +25,7 @@ struct MoviesServiceModel : Codable {
     static let database = DatabaseHandler.shared
     
     func store() {
-        guard let movies = MoviesServiceModel.database.add(Movies.self) else {
+        guard let movies = TopRatedServiceModel.database.add(TopRated.self) else {
             return
         }
 //        let moviesId = movies.id
@@ -48,7 +48,7 @@ struct MoviesServiceModel : Codable {
         movies.vote_average = vote_average
         movies.vote_count = Int32(vote_count)
         
-        MoviesServiceModel.database.save()
+        TopRatedServiceModel.database.save()
     }
     
 }
