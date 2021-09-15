@@ -8,7 +8,7 @@
 import UIKit
 
 
-class DetailMovieViewController: BaseListController, UICollectionViewDelegateFlowLayout {
+class DetailPopularViewController: BaseListController, UICollectionViewDelegateFlowLayout {
     
     var myStringValue:String?
     

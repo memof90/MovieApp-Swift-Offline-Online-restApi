@@ -47,6 +47,17 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
                         movies = database.fetch(TopRated.self)
             }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let movies = movies?[indexPath.item] else { return }
+        print(movies)
+        
+        let Controller = DetailTopRatedViewController()
+        Controller.navigationItem.title = movies.title
+        Controller.appId = Int(movies.id)
+        
+        navigationController?.pushViewController(Controller, animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 350)
     }

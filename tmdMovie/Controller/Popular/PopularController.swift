@@ -80,7 +80,7 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
         print(movies)
-        let Controller = DetailMovieViewController()
+        let Controller = DetailPopularViewController()
         Controller.navigationItem.title = movies.title
         Controller.appId = Int(movies.id)
         Controller.myStringValue = "hello"
