@@ -1,5 +1,5 @@
 //
-//  DetailViewCell.swift
+//  DetailUpcomingViewCell.swift
 //  tmdMovie
 //
 //  Created by Memo Figueredo on 15/9/21.
@@ -7,8 +7,7 @@
 
 import UIKit
 
-class DetailViewCell: UICollectionViewCell {
-    
+class DetailUpcomingViewCell: UICollectionViewCell {
     //    MARK: - Image
         let imagePath: UIImageView = {
            let iv = UIImageView()
@@ -81,7 +80,6 @@ class DetailViewCell: UICollectionViewCell {
         imageIcon.tintColor = color
         return imageIcon
     }
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)

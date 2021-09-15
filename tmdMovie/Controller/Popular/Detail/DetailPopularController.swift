@@ -28,7 +28,7 @@ class DetailPopularViewController: BaseListController, UICollectionViewDelegateF
         collectionView.backgroundColor = .white
         
         //        Allow register identifier cell
-                collectionView.register(DetailViewCell.self, forCellWithReuseIdentifier: cellId)
+                collectionView.register(DetailPopularViewCell.self, forCellWithReuseIdentifier: cellId)
 //        the title is more small Navegation item title
             navigationItem.largeTitleDisplayMode = .never
     }
