@@ -42,10 +42,12 @@ class DatabaseHandler {
     }
     
     func save() {
-        do {
-            try viewContext.save()
-        } catch {
-            print(error.localizedDescription)
+        viewContext.perform {
+            do {
+                try self.viewContext.save()
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
     
