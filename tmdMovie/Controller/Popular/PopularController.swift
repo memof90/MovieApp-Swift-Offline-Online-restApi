@@ -75,6 +75,22 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
                     movies = database.fetch(Popular.self)
         }
     
+    var didselectHandler: (() -> ())?
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let movies = movies?[indexPath.item] else { return }
+        print(movies)
+        let Controller = DetailMovieViewController()
+        Controller.navigationItem.title = movies.title
+        Controller.appId = Int(movies.id)
+        Controller.myStringValue = "hello"
+        Controller.didselectHandler = {
+            
+        }
+        navigationController?.pushViewController(Controller, animated: true)
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 350)
     }
