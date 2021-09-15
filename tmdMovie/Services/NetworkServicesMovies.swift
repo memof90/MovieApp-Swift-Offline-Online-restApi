@@ -83,6 +83,34 @@ class NetworkServiesMovies {
         task.resume()
     }
     
+    func fecthSearch(searchTerm: String, completion: @escaping ([Results], Error?) -> ()) {
+        let token = "5fff233cf139639b37ee955e7a852f34"
+//        https://api.themoviedb.org/3/search/movie?api_key=5fff233cf139639b37ee955e7a852f34&query=avengers
+        let URL_BASE = "https://api.themoviedb.org/3/search/movie?api_key=\(token)&query=\(searchTerm)"
+        guard let url = URL(string: URL_BASE) else {return}
+        
+        URLSession.shared.dataTask(with: url) { (data, resp, err) in
+            if let err = err {
+                print("Failed to fetch apps:", err)
+                completion([], nil)
+                return
+            }
+//                        print(data)
+//                        print(String(data: data!, encoding: .utf8))
+            guard let data = data else {return}
+            
+            do {
+                let searchResult = try JSONDecoder().decode(SearchResult.self, from: data)
+//                print(searchResult)
+                completion(searchResult.results, nil)
+            } catch let jsonErr {
+                debugPrint("Failed to decode json:", jsonErr)
+                completion([], jsonErr)
+            }
+                    
+        }.resume()
+    }
+    
 }
 
 public struct APIResponse<T: Codable> : Codable {

@@ -12,9 +12,9 @@ class BaseTabController : UITabBarController {
         super.viewDidLoad()
         
         viewControllers = [
-        createNavController(viewController: PopularViewController(), title: "Popular", imageName: "text.badge.star", tilteLarge: true),
-        createNavController(viewController: TopRatedViewController(), title: "Top Rated", imageName: "hand.thumbsup.fill", tilteLarge: true),
-        createNavController(viewController: UpcomingViewController(), title: "Upcoming", imageName: "bolt.circle", tilteLarge: true),
+//        createNavController(viewController: PopularViewController(), title: "Popular", imageName: "text.badge.star", tilteLarge: true),
+//        createNavController(viewController: TopRatedViewController(), title: "Top Rated", imageName: "hand.thumbsup.fill", tilteLarge: true),
+//        createNavController(viewController: UpcomingViewController(), title: "Upcoming", imageName: "bolt.circle", tilteLarge: true),
         createNavController(viewController: SearchViewController(), title: "Search", imageName: "magnifyingglass", tilteLarge: true)
         ]
         
