@@ -25,10 +25,12 @@ class DetailMovieViewController: BaseListController, UICollectionViewDelegateFlo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .cyan
+        collectionView.backgroundColor = .white
         
         //        Allow register identifier cell
                 collectionView.register(DetailViewCell.self, forCellWithReuseIdentifier: cellId)
+//        the title is more small Navegation item title
+            navigationItem.largeTitleDisplayMode = .never
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +39,7 @@ class DetailMovieViewController: BaseListController, UICollectionViewDelegateFlo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: view.frame.width, height: 350)
+        return .init(width: view.frame.width, height: 450)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
