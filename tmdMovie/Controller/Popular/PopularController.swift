@@ -6,12 +6,14 @@
 //
 
 import UIKit
-
+import CoreData
 
 class PopularViewController: BaseListController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
 //    MARK:- Identifier Cell
     fileprivate let cellId = "id1234"
+
+
     
 //    MARK: - DataBaseLocal
     let database = DatabaseHandler.shared
@@ -61,7 +63,21 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
+        
+        //        Introduce some delay before performing the searh
+        //        throttling the search
+                timer?.invalidate()
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
+            self.movies = self.database.fetchSearch(search: searchText, Popular.self)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+            
+        })
+                
     }
+    
     
 //    MARK:- Save Data to Api to Core Data Model
     func NetworkServicesCoreData() {
@@ -106,6 +122,10 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         return .init(width: view.frame.width, height: 350)
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        //        saw data before dont load data
+        enterSearchTermLabel.isHidden = movies!.count != 0
+        
         return movies?.count ?? 0
 //        return 5
     }
