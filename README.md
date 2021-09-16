@@ -54,9 +54,9 @@ https://www.themoviedb.org/?language=es
      <td> Search Online </td>
   </tr>
   <tr>
-    <td><https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.18%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.18%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.38%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.45%20p.%C2%A0m..png?raw=true></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.45%20p.%C2%A0m..png?raw=true" width=270 height=480 ></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.58%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.39.15%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
   </tr>
@@ -79,11 +79,10 @@ To estructurtes the Views I use **PROGRAMATICALLY**
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
+    <td>Popular</td>
+     <td>Detailn</td>
   </tr>
   <tr>
-    <td><img src="screenshots/Screenshot_1582745092.png" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.55.40%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.55.28%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
   </tr>
