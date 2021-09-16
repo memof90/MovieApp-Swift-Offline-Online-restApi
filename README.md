@@ -3,6 +3,19 @@ This is a app with Swift, Programatically, RestApi, Generics, CoreData and Allow
 
 ## How To use This app
 
+## Demo App 
+
+<table>
+  <tr>
+    <td>Demo One</td>
+     <td>Demo Two</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20-%202021-09-15%20at%2022.49.07.gif?raw=true" width=270 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Grabación%20de%20pantalla%202021-09-16%20a%20la(s)%203.59.01%20p.%C2%A0m..gif?raw=true" width=270 height=480></td>
+  </tr>
+ </table>
+
 ** Go to the folder tmdMovie and install Pods to project 
 
 ```
