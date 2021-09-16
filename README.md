@@ -36,11 +36,13 @@ https://www.themoviedb.org/?language=es
     <td>Popular</td>
      <td>Deatil View</td>
      <td>Search Offline</td>
+     <td>Search Offline</td>
   </tr>
   <tr>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.37.00%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.37.15%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.02%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
+        <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.18%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
   </tr>
  </table>
 
@@ -54,7 +56,6 @@ https://www.themoviedb.org/?language=es
      <td> Search Online </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.18%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.38%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.45%20p.%C2%A0m..png?raw=true" width=270 height=480 ></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.38.58%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
