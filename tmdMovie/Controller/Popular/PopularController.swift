@@ -70,7 +70,7 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
                 timer?.invalidate()
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
-            self.movies = self.database.fetchSearch(search: searchText, Popular.self)
+            self.movies = self.database.fetchSearch(search: searchText, Popular.self, entityName: "Popular")
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }

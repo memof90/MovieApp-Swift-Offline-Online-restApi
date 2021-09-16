@@ -69,7 +69,7 @@ class UpcomingViewController: BaseListController, UICollectionViewDelegateFlowLa
                     timer?.invalidate()
             
             timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
-                self.movies = self.database.fetchSearch(search: searchText, Upcomig.self)
+                self.movies = self.database.fetchSearch(search: searchText, Upcomig.self, entityName: "Upcomig")
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }

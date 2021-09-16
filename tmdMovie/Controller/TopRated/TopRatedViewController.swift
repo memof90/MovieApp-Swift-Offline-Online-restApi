@@ -68,7 +68,7 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
                     timer?.invalidate()
             
             timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
-                self.movies = self.database.fetchSearch(search: searchText, TopRated.self)
+                self.movies = self.database.fetchSearch(search: searchText, TopRated.self, entityName: "TopRated")
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
