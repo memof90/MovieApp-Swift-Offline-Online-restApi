@@ -99,7 +99,7 @@ To estructurtes the Views I use **PROGRAMATICALLY**
 
 This Help me to Layout Views the App
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.45.14%20p.%C2%A0m..png?raw=true" width="200" height="300">
+<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.45.14%20p.%C2%A0m..png?raw=true" width="100" height="100">
 
 ### Services
 
@@ -148,7 +148,7 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
   </tr>
   <tr>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.41.06%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-    <td><img src="https://mail.google.com/mail/u/0?ui=2&ik=8ecb57b6c5&attid=0.1&permmsgid=msg-a:r6396285636973040984&th=17be0e1beab58156&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_M92k8dWqD-bsMiBkSj4ly952AZqh-6w-TlgwBmnPJzHCf2rkes6SZnULera2ptl3NBYJ5obeRY60RmJ1v2sTXyU1LUviyKaG6paHVD37yqtGHO5uh5i7V-3o&disp=emb&realattid=ii_ktj3odd00" width=270 height=480></td>
+    <td><img src="https://cutt.ly/rEtzcha" width=270 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.40.10%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
   </tr>
  </table>
@@ -163,10 +163,10 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
      <td>Testing</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.13.15%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.28.30%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.31.34%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.13.15%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.28.30%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.31.34%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
   </tr>
  </table>
  
