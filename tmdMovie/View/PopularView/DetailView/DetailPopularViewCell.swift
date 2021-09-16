@@ -33,7 +33,7 @@ class DetailPopularViewCell: UICollectionViewCell {
     //    MARK: - Image
         let imagePath: UIImageView = {
            let iv = UIImageView()
-            iv.backgroundColor = .red
+//            iv.backgroundColor = .red
             iv.layer.cornerRadius = 8
             iv.clipsToBounds = true
             iv.widthAnchor.constraint(equalToConstant: 335).isActive = true
