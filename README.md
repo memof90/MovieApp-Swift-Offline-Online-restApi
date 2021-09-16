@@ -89,9 +89,6 @@ To estructurtes the Views I use **PROGRAMATICALLY**
   </tr>
  </table>
 
-** <img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.55.40%20p.%C2%A0m..png?raw=true" width="200" height="400">
-
-**  <img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.55.28%20p.%C2%A0m..png?raw=true" width="200" height="400">
 
 ## Folders To App
 
@@ -99,7 +96,7 @@ To estructurtes the Views I use **PROGRAMATICALLY**
 
 This Help me to Layout Views the App
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.45.14%20p.%C2%A0m..png?raw=true" width="100" height="100">
+<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.45.14%20p.%C2%A0m..png?raw=true">
 
 ### Services
 
@@ -165,6 +162,17 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
   <tr>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.13.15%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
+  </tr>
+ </table>
+ 
+ ## Testing 
+ 
+ <table>
+  <tr>
+     <td>Testing Api</td>
+     <td>Testing</td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.28.30%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.31.34%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
   </tr>
