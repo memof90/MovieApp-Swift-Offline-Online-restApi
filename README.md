@@ -105,7 +105,7 @@ Help me to consume APIRest and pass data to coreData
 ** File **PopularservicesModel...** Contain the model to save data to api and fetch core Data to save Storage 
 ** File **NetworkServices** conatin the services to consume api with URLSession and decode data to Api 
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.44.31%20p.%C2%A0m..png?raw=true" width="200" height="300">
+<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.44.31%20p.%C2%A0m..png?raw=true">
 
 ### Controllers 
 
@@ -115,7 +115,7 @@ Help me to managed Protocol and state the app
 ** **BaseListController:** An abstract class that serves as the basis for objects that enable archiving and distribution of other objects.
 ** **DetailController:** Contain the Detail managed to each View
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.43.37%20p.%C2%A0m..png?raw=true" width="200" height="300">
+<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.43.37%20p.%C2%A0m..png?raw=true">
 
 ### Views 
 
@@ -124,7 +124,7 @@ Help me to managed View the cell to each View SearhViewCell, PopularViewCell, Up
 ** **ViewCell:** contain the all Controller principal **Popular**, **Toprated**, **Upcomming** and **Search** 
 ** **DetailViewCell:** contain the all Controller principal **Popular**, **Toprated**, **Upcomming** and **Search** 
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.43.01%20p.%C2%A0m..png?raw=true" width="200" height="300">
+<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.43.01%20p.%C2%A0m..png?raw=true">
 
 ### Model 
 
@@ -133,7 +133,7 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
 ** **Model:** contain the all Model strurture principal **Popular**, **Toprated**, **Upcomming** and **Search** 
 ** **DBManager:** contain Managed local database  
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.42.31%20p.%C2%A0m..png?raw=true" width="200" height="300">
+<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.42.31%20p.%C2%A0m..png?raw=true">
 
 ## Tools Help Me 
 
@@ -156,12 +156,10 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
   <tr>
     <td>Tesing Api status code 200</td>
      <td>Testing Performance</td>
-     <td>Testing Api</td>
-     <td>Testing</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.13.15%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.13.15%20p.%C2%A0m..png?raw=true"></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true"></td>
   </tr>
  </table>
  
@@ -173,8 +171,8 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
      <td>Testing</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.28.30%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.31.34%20p.%C2%A0m..png?raw=true" width=480 height=480></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.28.30%20p.%C2%A0m..png?raw=true"></td>
+    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.31.34%20p.%C2%A0m..png?raw=true"></td>
   </tr>
  </table>
  
