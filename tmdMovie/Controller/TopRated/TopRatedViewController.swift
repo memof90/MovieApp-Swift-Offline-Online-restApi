@@ -31,29 +31,44 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
         
         //        Allow register identifier cell
                 collectionView.register(TopRatedViewCell.self, forCellWithReuseIdentifier: cellId)
+        
+        NewtworkServiceToCoreData()
+        fetchDataToCoreData()
     }
     
-    //    MARK: Save Data to Api to Core Data Model
+    //    MARK:- Save Data to Api to Core Data Model
+    func NewtworkServiceToCoreData() {
+        NetworkServiesMovies.shared.sycnTopRated(searchTerm: "top_rated") {
+            self.movies = self.database.fetch(TopRated.self)
+        }
+    }
+    //    MARK:- second Option Save Data to Api to Core Data Model
         override func viewDidAppear(_ animated: Bool) {
-            NetworkServiesMovies.shared.sycnTopRated(searchTerm: "top_rated") {
-                self.movies = self.database.fetch(TopRated.self)
-            }
+//            NetworkServiesMovies.shared.sycnTopRated(searchTerm: "top_rated") {
+//                self.movies = self.database.fetch(TopRated.self)
+//            }
         }
     
-    //        MARK: Fetch data to Core Data
+    //        MARK:- Fetch data to Core Data
+    
+        func fetchDataToCoreData() {
+        movies = database.fetch(TopRated.self)
+        }
+    //        MARK:- second Option Fetch data to Core Data
             override func viewWillAppear(_ animated: Bool) {
                 //        let results = database.fetch(Movies.self)
                 //        print(results.map { $0.title})
-                        movies = database.fetch(TopRated.self)
+//                        movies = database.fetch(TopRated.self)
             }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
-        print(movies)
+//        print(movies)
         
         let Controller = DetailTopRatedViewController()
         Controller.navigationItem.title = movies.title
-        Controller.appId = Int(movies.id)
+//        Controller.appId = Int(movies.id)
+        Controller.movies =  movies
         
         navigationController?.pushViewController(Controller, animated: true)
     }

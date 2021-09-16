@@ -8,6 +8,27 @@
 import UIKit
 
 class DetailUpcomingViewCell: UICollectionViewCell {
+    
+    var movies: Upcomig? {
+        didSet {
+            setupData()
+        }
+    }
+    
+    func setupData() {
+        guard let movies = movies else { return }
+        if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.backdrop_path)") {
+            imagePath.sd_setImage(with: url)
+        }
+        
+        popularityLabel.text = movies.popularity.toString()
+        languagueLabel.text = movies.original_language
+        vote_countLabel.text = "\(movies.vote_count)"
+        overviewLabel.text = movies.overview
+        
+    }
+    
+    
     //    MARK: - Image
         let imagePath: UIImageView = {
            let iv = UIImageView()

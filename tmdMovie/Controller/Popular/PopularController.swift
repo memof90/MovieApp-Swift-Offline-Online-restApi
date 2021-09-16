@@ -42,6 +42,8 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
 //        Allow register identifier cell
         collectionView.register(PopulaViewCell.self, forCellWithReuseIdentifier: cellId)
         setupSearchBar()
+        NetworkServicesCoreData()
+        fetchDataToCoreData()
     }
     
 //    MARK: - setupSearchBar
@@ -61,32 +63,41 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         print(searchText)
     }
     
-//    MARK: Save Data to Api to Core Data Model
-    override func viewDidAppear(_ animated: Bool) {
+//    MARK:- Save Data to Api to Core Data Model
+    func NetworkServicesCoreData() {
         NetworkServiesMovies.shared.sycnPopular(searchTerm: "popular") {
             self.movies = self.database.fetch(Popular.self)
         }
     }
+
+// MARK: - OPTION TWO Save Data to Api to Core Data Model
+    override func viewDidAppear(_ animated: Bool) {
+//        NetworkServiesMovies.shared.sycnPopular(searchTerm: "popular") {
+//            self.movies = self.database.fetch(Popular.self)
+//        }
+    }
         
-//        MARK: Fetch data to Core Data
+//        MARK:- Fetch data to Core Data
+    func fetchDataToCoreData() {
+        movies = database.fetch(Popular.self)
+    }
+// MARK: - OPTION TWO Fetch data to Core Data
         override func viewWillAppear(_ animated: Bool) {
             //        let results = database.fetch(Movies.self)
             //        print(results.map { $0.title})
-                    movies = database.fetch(Popular.self)
+//                    movies = database.fetch(Popular.self)
         }
     
     var didselectHandler: (() -> ())?
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
-        print(movies)
+//        print(movies)
         let Controller = DetailPopularViewController()
         Controller.navigationItem.title = movies.title
-        Controller.appId = Int(movies.id)
-        Controller.myStringValue = "hello"
-        Controller.didselectHandler = {
-            
-        }
+//        Controller.appId = Int(movies.id)
+        Controller.movies =  movies
+        
         navigationController?.pushViewController(Controller, animated: true)
     }
     

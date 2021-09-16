@@ -32,32 +32,44 @@ class UpcomingViewController: BaseListController, UICollectionViewDelegateFlowLa
         
         //        Allow register identifier cell
                 collectionView.register(UpcomingViewCell.self, forCellWithReuseIdentifier: cellId)
-        
+            NewtworkServiceToCoreData()
+            FetchCoreData()
         
     }
     
-    //    MARK: Save Data to Api to Core Data Model
-        override func viewDidAppear(_ animated: Bool) {
-            NetworkServiesMovies.shared.sycnUpcoming(searchTerm: "upcoming") {
-                self.movies = self.database.fetch(Upcomig.self)
-            }
-        }
+    //    MARK:- Save Data to Api to Core Data Model
     
-    //        MARK: Fetch data to Core Data
+    func NewtworkServiceToCoreData() {
+        NetworkServiesMovies.shared.sycnUpcoming(searchTerm: "upcoming") {
+            self.movies = self.database.fetch(Upcomig.self)
+        }
+    }
+    //    MARK:- second Option Save Data to Api to Core Data Model
+        override func viewDidAppear(_ animated: Bool) {
+//            NetworkServiesMovies.shared.sycnUpcoming(searchTerm: "upcoming") {
+//                self.movies = self.database.fetch(Upcomig.self)
+//            }
+        }
+    //        MARK:- Fetch data to Core Data
+        func FetchCoreData() {
+            movies = database.fetch(Upcomig.self)
+            }
+    
+    //        MARK:- second Option Fetch data to Core Data
             override func viewWillAppear(_ animated: Bool) {
                 //        let results = database.fetch(Movies.self)
                 //        print(results.map { $0.title})
-                        movies = database.fetch(Upcomig.self)
+//                        movies = database.fetch(Upcomig.self)
             }
     
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
-        print(movies)
         
         let Controller = DetailUpcomingViewController()
         Controller.navigationItem.title = movies.title
-        Controller.appId = Int(movies.id)
+//        Controller.appId = Int(movies.id)
+        Controller.movies =  movies
         
         navigationController?.pushViewController(Controller, animated: true)
     }

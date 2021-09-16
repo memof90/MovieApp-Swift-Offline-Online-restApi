@@ -15,6 +15,9 @@ class DetailTopRatedViewController: BaseListController, UICollectionViewDelegate
         }
     }
     
+    //    MARK - Variable Popular to pass into controller
+        var movies: TopRated?
+    
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
     
@@ -38,10 +41,11 @@ class DetailTopRatedViewController: BaseListController, UICollectionViewDelegate
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PopulaViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DetailTopRatedViewCell
 //        if movies!.count > 0 && indexPath.row < movies!.count {
 //            cell.movies = movies?[indexPath.item]
+            cell.movies = movies
 //        }
         
         return cell

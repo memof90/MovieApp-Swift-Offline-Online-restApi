@@ -12,6 +12,11 @@ class DetailPopularViewController: BaseListController, UICollectionViewDelegateF
     
     var myStringValue:String?
     
+    //    MARK: - Reload collectionView
+
+    
+    var movies: Popular?
+    
     var appId: Int! {
         didSet {
             print("Here is my id", appId!)
@@ -34,7 +39,7 @@ class DetailPopularViewController: BaseListController, UICollectionViewDelegateF
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("The value of myStringValue is: \(myStringValue!)")
+//        print("The value of myStringValue is: \(myStringValue!)")
         didselectHandler?()
     }
     
@@ -48,10 +53,10 @@ class DetailPopularViewController: BaseListController, UICollectionViewDelegateF
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PopulaViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DetailPopularViewCell
 //        if movies!.count > 0 && indexPath.row < movies!.count {
-//            cell.movies = movies?[indexPath.item]
+            cell.movies = movies
 //        }
         
         return cell

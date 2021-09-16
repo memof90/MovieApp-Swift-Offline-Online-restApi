@@ -13,3 +13,9 @@ extension Double {
         return String(format: "%.1f",self)
     }
 }
+
+extension Float {
+    func toString() -> String {
+        return String(format: "%.1f",self)
+    }
+}
