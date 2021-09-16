@@ -33,6 +33,7 @@
 		8D6BAD9C26F15E35000EB1AF /* TopRatedServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BAD9B26F15E35000EB1AF /* TopRatedServicesModel.swift */; };
 		8D6BADA126F15E82000EB1AF /* UpcomingServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BADA026F15E82000EB1AF /* UpcomingServicesModel.swift */; };
 		8D6BADA526F16FFF000EB1AF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BADA426F16FFF000EB1AF /* Search.swift */; };
+		8D753F5226F3CBBA00272DD5 /* tmdMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D753F5126F3CBBA00272DD5 /* tmdMovieTests.swift */; };
 		8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E126EC0E68005D4296 /* AppDelegate.swift */; };
 		8DD036E426EC0E68005D4296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E326EC0E68005D4296 /* SceneDelegate.swift */; };
 		8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E526EC0E68005D4296 /* ViewController.swift */; };
@@ -47,6 +48,16 @@
 		8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370726EC3CF7005D4296 /* APIError.swift */; };
 		BFED81A1463C1519E5C48BE1 /* Pods_tmdMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53CBF48D5D9B036D6E74C7E /* Pods_tmdMovie.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D753F5426F3CBBA00272DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DD036D626EC0E67005D4296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD036DD26EC0E68005D4296;
+			remoteInfo = tmdMovie;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		26317A54107D3E52FE81F3ED /* Pods-tmdMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdMovie.debug.xcconfig"; path = "Target Support Files/Pods-tmdMovie/Pods-tmdMovie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +87,9 @@
 		8D6BAD9B26F15E35000EB1AF /* TopRatedServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedServicesModel.swift; sourceTree = "<group>"; };
 		8D6BADA026F15E82000EB1AF /* UpcomingServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingServicesModel.swift; sourceTree = "<group>"; };
 		8D6BADA426F16FFF000EB1AF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		8D753F4F26F3CBBA00272DD5 /* tmdMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D753F5126F3CBBA00272DD5 /* tmdMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdMovieTests.swift; sourceTree = "<group>"; };
+		8D753F5326F3CBBA00272DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD036DE26EC0E68005D4296 /* tmdMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD036E126EC0E68005D4296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD036E326EC0E68005D4296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D753F4C26F3CBBA00272DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD036DB26EC0E68005D4296 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,10 +302,20 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		8D753F5026F3CBBA00272DD5 /* tmdMovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D753F5126F3CBBA00272DD5 /* tmdMovieTests.swift */,
+				8D753F5326F3CBBA00272DD5 /* Info.plist */,
+			);
+			path = tmdMovieTests;
+			sourceTree = "<group>";
+		};
 		8DD036D526EC0E67005D4296 = {
 			isa = PBXGroup;
 			children = (
 				8DD036E026EC0E68005D4296 /* tmdMovie */,
+				8D753F5026F3CBBA00272DD5 /* tmdMovieTests */,
 				8DD036DF26EC0E68005D4296 /* Products */,
 				1436A5B402DC17609002F8AE /* Pods */,
 				DB0307144A3BAB83EB7090F3 /* Frameworks */,
@@ -295,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD036DE26EC0E68005D4296 /* tmdMovie.app */,
+				8D753F4F26F3CBBA00272DD5 /* tmdMovieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -390,6 +422,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8D753F4E26F3CBBA00272DD5 /* tmdMovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D753F5626F3CBBA00272DD5 /* Build configuration list for PBXNativeTarget "tmdMovieTests" */;
+			buildPhases = (
+				8D753F4B26F3CBBA00272DD5 /* Sources */,
+				8D753F4C26F3CBBA00272DD5 /* Frameworks */,
+				8D753F4D26F3CBBA00272DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D753F5526F3CBBA00272DD5 /* PBXTargetDependency */,
+			);
+			name = tmdMovieTests;
+			productName = tmdMovieTests;
+			productReference = 8D753F4F26F3CBBA00272DD5 /* tmdMovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8DD036DD26EC0E68005D4296 /* tmdMovie */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD036F526EC0E6B005D4296 /* Build configuration list for PBXNativeTarget "tmdMovie" */;
@@ -418,6 +468,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					8D753F4E26F3CBBA00272DD5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 8DD036DD26EC0E68005D4296;
+					};
 					8DD036DD26EC0E68005D4296 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -437,11 +491,19 @@
 			projectRoot = "";
 			targets = (
 				8DD036DD26EC0E68005D4296 /* tmdMovie */,
+				8D753F4E26F3CBBA00272DD5 /* tmdMovieTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8D753F4D26F3CBBA00272DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD036DC26EC0E68005D4296 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,6 +559,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8D753F4B26F3CBBA00272DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D753F5226F3CBBA00272DD5 /* tmdMovieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD036DA26EC0E68005D4296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,6 +611,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8D753F5526F3CBBA00272DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DD036DD26EC0E68005D4296 /* tmdMovie */;
+			targetProxy = 8D753F5426F3CBBA00272DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8DD036E726EC0E68005D4296 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -561,6 +639,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8D753F5726F3CBBA00272DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S52ZRS44GD;
+				INFOPLIST_FILE = tmdMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.tmdMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tmdMovie.app/tmdMovie";
+			};
+			name = Debug;
+		};
+		8D753F5826F3CBBA00272DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S52ZRS44GD;
+				INFOPLIST_FILE = tmdMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.tmdMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tmdMovie.app/tmdMovie";
+			};
+			name = Release;
+		};
 		8DD036F326EC0E6B005D4296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -683,6 +801,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S52ZRS44GD;
 				INFOPLIST_FILE = tmdMovie/Info.plist;
@@ -692,6 +811,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.tmdMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -703,6 +823,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S52ZRS44GD;
 				INFOPLIST_FILE = tmdMovie/Info.plist;
@@ -712,6 +833,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.tmdMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -720,6 +842,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8D753F5626F3CBBA00272DD5 /* Build configuration list for PBXNativeTarget "tmdMovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D753F5726F3CBBA00272DD5 /* Debug */,
+				8D753F5826F3CBBA00272DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8DD036D926EC0E67005D4296 /* Build configuration list for PBXProject "tmdMovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
