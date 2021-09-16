@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLayout {
+class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
@@ -25,16 +25,58 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
             }
         }
     
+    //   MARK: - SearchBar Message to the data not appareance
+        fileprivate let searchController = UISearchController(searchResultsController: nil)
+        fileprivate let enterSearchTermLabel: UILabel = {
+                let label = UILabel()
+                label.text  = "Please enter your movie Search"
+            label.textAlignment = .center
+            label.font = UIFont.boldSystemFont(ofSize: 20)
+            return label
+        }()
+    
+    //    MARK: - ViewDidLoad CollectionsViews
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
         
         //        Allow register identifier cell
                 collectionView.register(TopRatedViewCell.self, forCellWithReuseIdentifier: cellId)
-        
+        setupSearchBar()
         NewtworkServiceToCoreData()
         fetchDataToCoreData()
     }
+    
+    //    MARK: - setupSearchBar
+        fileprivate func setupSearchBar() {
+            definesPresentationContext = true
+            navigationItem.searchController = self.searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
+            searchController.obscuresBackgroundDuringPresentation = false
+            searchController.searchBar.delegate = self
+        }
+    
+    //    MARK: - Action to reloadTime Searching
+        //    timer to reload data
+            var timer: Timer?
+        
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            print(searchText)
+            
+            //        Introduce some delay before performing the searh
+            //        throttling the search
+                    timer?.invalidate()
+            
+            timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
+                self.movies = self.database.fetchSearch(search: searchText, TopRated.self)
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+                
+            })
+                    
+        }
+    
     
     //    MARK:- Save Data to Api to Core Data Model
     func NewtworkServiceToCoreData() {
@@ -42,12 +84,14 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
             self.movies = self.database.fetch(TopRated.self)
         }
     }
+    
     //    MARK:- second Option Save Data to Api to Core Data Model
         override func viewDidAppear(_ animated: Bool) {
 //            NetworkServiesMovies.shared.sycnTopRated(searchTerm: "top_rated") {
 //                self.movies = self.database.fetch(TopRated.self)
 //            }
         }
+    
     
     //        MARK:- Fetch data to Core Data
     
@@ -60,6 +104,7 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
                 //        print(results.map { $0.title})
 //                        movies = database.fetch(TopRated.self)
             }
+
 
     //    MARK: - Protocols CollectionsViews
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -78,6 +123,8 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
         return .init(width: view.frame.width, height: 350)
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        //        saw data before dont load data
+        enterSearchTermLabel.isHidden = movies!.count != 0
         return movies?.count ?? 0
     }
     

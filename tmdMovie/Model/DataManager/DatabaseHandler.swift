@@ -43,7 +43,7 @@ class DatabaseHandler {
     //    MARK: - Fuction Search objects to core Data
     func fetchSearch<T: NSManagedObject>(search: String, _ type: T.Type) -> [T] {
         var predicate: NSPredicate = NSPredicate()
-        predicate = NSPredicate(format: "original_title == %@", search)
+        predicate = NSPredicate(format: "title == %@", search)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Popular")
         fetchRequest.predicate = predicate
         do {
