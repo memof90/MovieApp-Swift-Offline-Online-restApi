@@ -50,8 +50,8 @@ https://www.themoviedb.org/?language=es
 
 <table>
   <tr>
+    <td>TopRated</td>
     <td>Upcoming</td>
-     <td>TopRated</td>
      <td> Search Online </td>
      <td> Search Online </td>
   </tr>
