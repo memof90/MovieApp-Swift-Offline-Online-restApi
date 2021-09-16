@@ -34,6 +34,30 @@
 		8D6BADA126F15E82000EB1AF /* UpcomingServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BADA026F15E82000EB1AF /* UpcomingServicesModel.swift */; };
 		8D6BADA526F16FFF000EB1AF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BADA426F16FFF000EB1AF /* Search.swift */; };
 		8D753F5226F3CBBA00272DD5 /* tmdMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D753F5126F3CBBA00272DD5 /* tmdMovieTests.swift */; };
+		8D753F7126F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.42.31 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F5A26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.42.31 p. m..png */; };
+		8D753F7226F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.58 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F5B26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.58 p. m..png */; };
+		8D753F7326F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F5C26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png */; };
+		8D753F7426F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F5D26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png */; };
+		8D753F7526F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F5E26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png */; };
+		8D753F7626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F5F26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png */; };
+		8D753F7726F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.40 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6026F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.40 p. m..png */; };
+		8D753F7826F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6126F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png */; };
+		8D753F7926F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.18 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6226F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.18 p. m..png */; };
+		8D753F7A26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6326F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png */; };
+		8D753F7B26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6426F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png */; };
+		8D753F7C26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6526F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png */; };
+		8D753F7D26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.15 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6626F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.15 p. m..png */; };
+		8D753F7E26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.06 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6726F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.06 p. m..png */; };
+		8D753F7F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.45.14 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6826F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.45.14 p. m..png */; };
+		8D753F8026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.02 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6926F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.02 p. m..png */; };
+		8D753F8126F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.45 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6A26F3EC2500272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.45 p. m..png */; };
+		8D753F8226F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6B26F3EC2500272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png */; };
+		8D753F8326F3EC2600272DD5 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6C26F3EC2600272DD5 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif */; };
+		8D753F8426F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6D26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png */; };
+		8D753F8526F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.28.30 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6E26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.28.30 p. m..png */; };
+		8D753F8626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */; };
+		8D753F8726F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F7026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png */; };
+		8D753F8926F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */; };
 		8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E126EC0E68005D4296 /* AppDelegate.swift */; };
 		8DD036E426EC0E68005D4296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E326EC0E68005D4296 /* SceneDelegate.swift */; };
 		8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E526EC0E68005D4296 /* ViewController.swift */; };
@@ -90,6 +114,30 @@
 		8D753F4F26F3CBBA00272DD5 /* tmdMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D753F5126F3CBBA00272DD5 /* tmdMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdMovieTests.swift; sourceTree = "<group>"; };
 		8D753F5326F3CBBA00272DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D753F5A26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.42.31 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.42.31 p. m..png"; sourceTree = "<group>"; };
+		8D753F5B26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.58 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.38.58 p. m..png"; sourceTree = "<group>"; };
+		8D753F5C26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png"; sourceTree = "<group>"; };
+		8D753F5D26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png"; sourceTree = "<group>"; };
+		8D753F5E26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png"; sourceTree = "<group>"; };
+		8D753F5F26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png"; sourceTree = "<group>"; };
+		8D753F6026F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.40 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.55.40 p. m..png"; sourceTree = "<group>"; };
+		8D753F6126F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png"; sourceTree = "<group>"; };
+		8D753F6226F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.18 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.38.18 p. m..png"; sourceTree = "<group>"; };
+		8D753F6326F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png"; sourceTree = "<group>"; };
+		8D753F6426F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png"; sourceTree = "<group>"; };
+		8D753F6526F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png"; sourceTree = "<group>"; };
+		8D753F6626F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.15 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.37.15 p. m..png"; sourceTree = "<group>"; };
+		8D753F6726F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.06 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.41.06 p. m..png"; sourceTree = "<group>"; };
+		8D753F6826F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.45.14 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.45.14 p. m..png"; sourceTree = "<group>"; };
+		8D753F6926F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.02 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.38.02 p. m..png"; sourceTree = "<group>"; };
+		8D753F6A26F3EC2500272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.45 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.38.45 p. m..png"; sourceTree = "<group>"; };
+		8D753F6B26F3EC2500272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png"; sourceTree = "<group>"; };
+		8D753F6C26F3EC2600272DD5 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif"; sourceTree = "<group>"; };
+		8D753F6D26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png"; sourceTree = "<group>"; };
+		8D753F6E26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.28.30 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.28.30 p. m..png"; sourceTree = "<group>"; };
+		8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png"; sourceTree = "<group>"; };
+		8D753F7026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png"; sourceTree = "<group>"; };
+		8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif"; sourceTree = "<group>"; };
 		8DD036DE26EC0E68005D4296 /* tmdMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD036E126EC0E68005D4296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD036E326EC0E68005D4296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -311,6 +359,37 @@
 			path = tmdMovieTests;
 			sourceTree = "<group>";
 		};
+		8D753F5926F3EBD700272DD5 /* ScreenApp */ = {
+			isa = PBXGroup;
+			children = (
+				8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */,
+				8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */,
+				8D753F5C26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png */,
+				8D753F6E26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.28.30 p. m..png */,
+				8D753F6326F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png */,
+				8D753F6526F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png */,
+				8D753F6626F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.15 p. m..png */,
+				8D753F6926F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.02 p. m..png */,
+				8D753F6226F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.18 p. m..png */,
+				8D753F5F26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png */,
+				8D753F6A26F3EC2500272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.45 p. m..png */,
+				8D753F5B26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.58 p. m..png */,
+				8D753F6426F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png */,
+				8D753F6B26F3EC2500272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png */,
+				8D753F6726F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.06 p. m..png */,
+				8D753F5D26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png */,
+				8D753F5A26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.42.31 p. m..png */,
+				8D753F5E26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png */,
+				8D753F6126F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png */,
+				8D753F6D26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png */,
+				8D753F6826F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.45.14 p. m..png */,
+				8D753F7026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png */,
+				8D753F6026F3EC2400272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.40 p. m..png */,
+				8D753F6C26F3EC2600272DD5 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif */,
+			);
+			path = ScreenApp;
+			sourceTree = "<group>";
+		};
 		8DD036D526EC0E67005D4296 = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +413,7 @@
 		8DD036E026EC0E68005D4296 /* tmdMovie */ = {
 			isa = PBXGroup;
 			children = (
+				8D753F5926F3EBD700272DD5 /* ScreenApp */,
 				8D6BAD7C26F101E3000EB1AF /* Helpers */,
 				8DD0370426EC201B005D4296 /* Extensions */,
 				8DD036FB26EC158F005D4296 /* Services */,
@@ -508,9 +588,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D753F8726F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png in Resources */,
+				8D753F7F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.45.14 p. m..png in Resources */,
+				8D753F7726F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.40 p. m..png in Resources */,
+				8D753F8026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.02 p. m..png in Resources */,
+				8D753F7E26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.06 p. m..png in Resources */,
+				8D753F7326F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png in Resources */,
+				8D753F7126F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.42.31 p. m..png in Resources */,
+				8D753F8926F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif in Resources */,
+				8D753F7526F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png in Resources */,
+				8D753F8626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png in Resources */,
+				8D753F7B26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png in Resources */,
+				8D753F7826F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png in Resources */,
+				8D753F8426F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png in Resources */,
+				8D753F7626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png in Resources */,
+				8D753F8326F3EC2600272DD5 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif in Resources */,
+				8D753F8126F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.45 p. m..png in Resources */,
+				8D753F7926F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.18 p. m..png in Resources */,
 				8DD036F126EC0E6B005D4296 /* LaunchScreen.storyboard in Resources */,
+				8D753F8526F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.28.30 p. m..png in Resources */,
+				8D753F7226F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.58 p. m..png in Resources */,
+				8D753F7D26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.15 p. m..png in Resources */,
+				8D753F7C26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png in Resources */,
 				8DD036EE26EC0E6B005D4296 /* Assets.xcassets in Resources */,
+				8D753F7426F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png in Resources */,
+				8D753F7A26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png in Resources */,
 				8DD036E926EC0E68005D4296 /* Main.storyboard in Resources */,
+				8D753F8226F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
