@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// MARK: implemented Layout to each View and implemneted in the next Release 
 extension UIView {
     
     @discardableResult
