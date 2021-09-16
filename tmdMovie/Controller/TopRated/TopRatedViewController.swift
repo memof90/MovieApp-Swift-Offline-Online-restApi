@@ -60,7 +60,8 @@ class TopRatedViewController: BaseListController, UICollectionViewDelegateFlowLa
                 //        print(results.map { $0.title})
 //                        movies = database.fetch(TopRated.self)
             }
-    
+
+    //    MARK: - Protocols CollectionsViews
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
 //        print(movies)

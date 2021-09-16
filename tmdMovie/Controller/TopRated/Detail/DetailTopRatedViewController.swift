@@ -9,11 +9,11 @@ import UIKit
 
 class DetailTopRatedViewController: BaseListController, UICollectionViewDelegateFlowLayout {
    
-    var appId: Int! {
-        didSet {
-            print("Here is my id", appId!)
-        }
-    }
+//    var appId: Int! {
+//        didSet {
+//            print("Here is my id", appId!)
+//        }
+//    }
     
     //    MARK - Variable Popular to pass into controller
         var movies: TopRated?
@@ -21,6 +21,7 @@ class DetailTopRatedViewController: BaseListController, UICollectionViewDelegate
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
     
+    //    MARK: - ViewDidLoad
         override func viewDidLoad() {
             super.viewDidLoad()
             collectionView.backgroundColor = .white
@@ -30,7 +31,8 @@ class DetailTopRatedViewController: BaseListController, UICollectionViewDelegate
     //        the title is more small Navegation item title
                 navigationItem.largeTitleDisplayMode = .never
         }
-    
+
+    //    MARK: - Protocols CollectionsViews
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 450)
     }

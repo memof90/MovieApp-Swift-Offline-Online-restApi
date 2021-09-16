@@ -24,7 +24,7 @@ class UpcomingViewController: BaseListController, UICollectionViewDelegateFlowLa
           
             }
         }
-    
+//    MARK: - ViewDidLoad 
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
@@ -62,7 +62,7 @@ class UpcomingViewController: BaseListController, UICollectionViewDelegateFlowLa
 //                        movies = database.fetch(Upcomig.self)
             }
     
-    
+    //    MARK: - Protocols CollectionsViews
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
         

@@ -10,7 +10,7 @@ import UIKit
 class BaseTabController : UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //    MARK: - Pass controllers to tabBar Controller
         viewControllers = [
         createNavController(viewController: PopularViewController(), title: "Popular", imageName: "text.badge.star", tilteLarge: true),
         createNavController(viewController: TopRatedViewController(), title: "Top Rated", imageName: "hand.thumbsup.fill", tilteLarge: true),

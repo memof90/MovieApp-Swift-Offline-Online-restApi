@@ -8,13 +8,13 @@
 import UIKit
 
 class SearchViewCell: UICollectionViewCell {
-    
+    //    MARK: - property observers to pass data to cell to controller each change to property
     var appResult: Results! {
         didSet {
             setupData()
         }
     }
-    
+    //    MARK: - Data to cell
     func setupData() {
         guard let movies = appResult else { return }
         if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.poster_path)") {
@@ -94,11 +94,12 @@ class SearchViewCell: UICollectionViewCell {
 //        backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         
         // MARK: - Stack View contentLabel
-        
+//    MARK: - View Icon and Star
         let stackLabelStart = UIStackView(arrangedSubviews: [
         imageIcon,ratingLabel
         ])
         stackLabelStart.spacing = 5
+//    MARK: - View Icon and Star and dataLabel
         let labelStackViewDescription = UIStackView(arrangedSubviews: [
         stackLabelStart,dateLabel
         ])
@@ -106,7 +107,7 @@ class SearchViewCell: UICollectionViewCell {
         labelStackViewDescription.alignment = .center
         labelStackViewDescription.spacing = 10
         
-        
+//    MARK: - View Icon and Star and dataLabel and nameLabel and Button
         let labelStackView = UIStackView(arrangedSubviews: [
             nameLabel, labelStackViewDescription ,getWhatchButton
         ])
@@ -116,6 +117,7 @@ class SearchViewCell: UICollectionViewCell {
         labelStackView.spacing = 10
         
         // MARK: - Stack View Main
+        //    MARK: - Image View Icon and Star and dataLabel
         let stackView = UIStackView(arrangedSubviews: [
         imagePath, labelStackView
         ])

@@ -28,7 +28,7 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         }
     }
     
-//   MARK: - SearchBar
+//   MARK: - SearchBar Message to the data not appareance 
     fileprivate let searchController = UISearchController(searchResultsController: nil)
     fileprivate let enterSearchTermLabel: UILabel = {
             let label = UILabel()
@@ -37,7 +37,8 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
-    
+
+//    MARK: - ViewDidLoad CollectionsViews
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
@@ -104,8 +105,9 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
 //                    movies = database.fetch(Popular.self)
         }
     
-    var didselectHandler: (() -> ())?
-    
+//    var didselectHandler: (() -> ())?
+  
+    //    MARK: - Protocols CollectionsViews
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
 //        print(movies)

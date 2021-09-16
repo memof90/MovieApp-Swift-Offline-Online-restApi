@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-
+//    MARK: - Model To objects to core Data
 public class Upcomig: NSManagedObject {
 //    @NSManaged var adult : Bool
     @NSManaged var backdrop_path : String

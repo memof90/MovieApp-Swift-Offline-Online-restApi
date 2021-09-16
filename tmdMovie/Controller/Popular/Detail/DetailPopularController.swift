@@ -10,7 +10,7 @@ import UIKit
 
 class DetailPopularViewController: BaseListController, UICollectionViewDelegateFlowLayout {
     
-    var myStringValue:String?
+//    var myStringValue:String?
     
     //    MARK: - Reload collectionView
 
@@ -26,8 +26,8 @@ class DetailPopularViewController: BaseListController, UICollectionViewDelegateF
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
     
-    var didselectHandler: (() -> ())?
-    
+//    var didselectHandler: (() -> ())?
+    //    MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
@@ -40,9 +40,10 @@ class DetailPopularViewController: BaseListController, UICollectionViewDelegateF
     
     override func viewWillAppear(_ animated: Bool) {
 //        print("The value of myStringValue is: \(myStringValue!)")
-        didselectHandler?()
+//        didselectHandler?()
     }
     
+    //    MARK: - Protocols CollectionsViews
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 450)
     }

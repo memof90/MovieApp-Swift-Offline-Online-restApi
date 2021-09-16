@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// MARK: Struct to pass restApi to coreData to Cache App
 struct UpcomingServiceModel : Codable {
 //    let adult : Bool
     let backdrop_path : String
@@ -22,8 +22,10 @@ struct UpcomingServiceModel : Codable {
     let vote_average: Double
     let vote_count: Int
     
+    // MARK: DBManager to managed the local data base
     static let database = DatabaseHandler.shared
     
+    // MARK: Store to added data to  local data base
     func store() {
         guard let movies = UpcomingServiceModel.database.add(Upcomig.self) else {
             return

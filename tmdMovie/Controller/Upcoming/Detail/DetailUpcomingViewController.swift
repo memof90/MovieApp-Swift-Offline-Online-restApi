@@ -15,12 +15,12 @@ class DetailUpcomingViewController: BaseListController, UICollectionViewDelegate
         }
     }
     
-    //    MARK - Variable Popular to pass into controller
+    //    MARK: - Variable Popular to pass into controller
         var movies: Upcomig?
     
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
-    
+    //    MARK: - ViewDidLoad
         override func viewDidLoad() {
             super.viewDidLoad()
             collectionView.backgroundColor = .white
@@ -29,7 +29,7 @@ class DetailUpcomingViewController: BaseListController, UICollectionViewDelegate
     //        the title is more small Navegation item title
                 navigationItem.largeTitleDisplayMode = .never
         }
-    
+    //    MARK: - Protocols CollectionsViews
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 450)
     }

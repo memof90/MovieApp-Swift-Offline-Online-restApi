@@ -7,10 +7,17 @@
 
 import Foundation
 
+// MARK: Network Services  to Obtain Data to NSOBJECT to Decode json in Dictionary
+
 class NetworkServiesMovies {
-    
+    // MARK: Singleton to share servcies to controller
     static var shared = NetworkServiesMovies()
+    
+    // MARK: Managed session to url
     let session = URLSession(configuration: .default)
+    
+    
+    // MARK:- Services to decode popular Data to api rest
     func sycnPopular(searchTerm: String,completion: @escaping (()-> Void)) {
         let token = "5fff233cf139639b37ee955e7a852f34"
         let URL_BASE = "https://api.themoviedb.org/3/movie/\(searchTerm)?api_key=\(token)&language=en-US"
@@ -34,7 +41,7 @@ class NetworkServiesMovies {
         }
         task.resume()
     }
-    
+// MARK:- Services to decode TopRated Data to api rest
     func sycnTopRated(searchTerm: String,completion: @escaping (()-> Void)) {
         let token = "5fff233cf139639b37ee955e7a852f34"
         let URL_BASE = "https://api.themoviedb.org/3/movie/\(searchTerm)?api_key=\(token)&language=en-US"
@@ -59,6 +66,7 @@ class NetworkServiesMovies {
         task.resume()
     }
     
+    // MARK:- Services to decode Upcommig Data to api rest
     func sycnUpcoming(searchTerm: String,completion: @escaping (()-> Void)) {
         let token = "5fff233cf139639b37ee955e7a852f34"
         let URL_BASE = "https://api.themoviedb.org/3/movie/\(searchTerm)?api_key=\(token)&language=en-US"
@@ -83,6 +91,7 @@ class NetworkServiesMovies {
         task.resume()
     }
     
+    // MARK:- Services to decode Search Data to api rest to aplicated Search Online to Movie
     func fecthSearch(searchTerm: String, completion: @escaping ([Results], Error?) -> ()) {
         let token = "5fff233cf139639b37ee955e7a852f34"
 //        https://api.themoviedb.org/3/search/movie?api_key=5fff233cf139639b37ee955e7a852f34&query=avengers
@@ -112,6 +121,8 @@ class NetworkServiesMovies {
     }
     
 }
+
+// MARK:- Struct to decode ApiResponser with Generics Data to api rest 
 
 public struct APIResponse<T: Codable> : Codable {
    public let total_results: Int

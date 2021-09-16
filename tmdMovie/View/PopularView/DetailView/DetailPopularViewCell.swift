@@ -9,13 +9,13 @@ import UIKit
 import SDWebImage
 
 class DetailPopularViewCell: UICollectionViewCell {
-    
+    //    MARK: - property observers to pass data to cell to controller each change to property
     var movies: Popular? {
         didSet {
             setupData()
         }
     }
-    
+    //    MARK: - Data to cell
     func setupData() {
         guard let movies = movies else { return }
         if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.backdrop_path)") {

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//    MARK: - Protocols CollectionsViewController to allow modify View to all Controller
 class BaseListController : UICollectionViewController {
     //    pass view to tabBar to UICollectionViewController
         init() {

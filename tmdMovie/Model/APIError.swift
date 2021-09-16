@@ -8,7 +8,7 @@
 import Foundation
 
 
-
+//    MARK: - Model To Error objects to core Data
 
 struct APIError: Codable {
     let message: String

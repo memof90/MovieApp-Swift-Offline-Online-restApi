@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//    MARK: - Model Decodable to search Reasults to implemented searchBar Online
 struct SearchResult: Decodable {
     let page : Int
     let results: [Results]

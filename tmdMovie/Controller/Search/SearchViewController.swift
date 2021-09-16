@@ -12,7 +12,7 @@ class SearchViewController: BaseListController, UICollectionViewDelegateFlowLayo
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
     
-    //    SEARCH CONTROLLER
+    //MARK:- SEARCH CONTROLLER Managed
         
         fileprivate let  searchController = UISearchController(searchResultsController: nil)
         
@@ -24,6 +24,7 @@ class SearchViewController: BaseListController, UICollectionViewDelegateFlowLayo
             return label
         }()
     
+//    MARK:- ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor  = .white
@@ -37,7 +38,7 @@ class SearchViewController: BaseListController, UICollectionViewDelegateFlowLayo
         moviesServies()
     }
     
-    //    MARK: SEACRH BAR SETUP
+    //    MARK: - SEACRH BAR SETUP
         fileprivate func setupSearchBar() {
             definesPresentationContext = true
             navigationItem.searchController = self.searchController
@@ -74,15 +75,16 @@ class SearchViewController: BaseListController, UICollectionViewDelegateFlowLayo
             })
             
         }
+//    MARK: - Save Results to api with the user Search
     fileprivate var appResults = [Results]()
-    
+    //    MARK: - Function  to  search Movie to into services
     func moviesServies() {
         NetworkServiesMovies.shared.fecthSearch(searchTerm: "Avengers") { results, err in
             if let err = err {
                 print("Failed to fetch apps:", err)
                 return
             }
-            
+            // Save Results to api rest
             self.appResults = results
     //                reload data
             DispatchQueue.main.async {
@@ -91,6 +93,7 @@ class SearchViewController: BaseListController, UICollectionViewDelegateFlowLayo
         }
     }
     
+    //    MARK: - Protocols Collections Views
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 350)
     }

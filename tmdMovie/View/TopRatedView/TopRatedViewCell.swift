@@ -8,13 +8,13 @@
 import UIKit
 
 class TopRatedViewCell: UICollectionViewCell {
-    
+    //    MARK: - property observers to pass data to cell to controller each change to property
     var movies: TopRated? {
         didSet {
             setupData()
         }
     }
-    
+    //    MARK: - Data to cell
     func setupData() {
         guard let movies = movies else { return }
         if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.poster_path)") {
