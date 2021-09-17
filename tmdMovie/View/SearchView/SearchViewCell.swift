@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class SearchViewCell: UICollectionViewCell {
     //    MARK: - property observers to pass data to cell to controller each change to property
     var appResult: Results! {
@@ -18,7 +18,16 @@ class SearchViewCell: UICollectionViewCell {
     func setupData() {
         guard let movies = appResult else { return }
         if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.poster_path)") {
-            imagePath.sd_setImage(with: url)
+            imagePath.kf.indicatorType = .activity
+            imagePath.kf.setImage(
+                with: url,
+                options: [
+                    .scaleFactor(UIScreen.main.scale),
+                    .transition(.fade(1)),
+                    .cacheOriginalImage
+                
+                ]
+            )
         }
         
         nameLabel.text = movies.title

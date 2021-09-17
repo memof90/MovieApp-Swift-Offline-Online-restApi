@@ -120,7 +120,41 @@ class NetworkServiesMovies {
         }.resume()
     }
     
+    // MARK:- Services to decode Video to api rest to aplicated Search Online to Movie
+        func fetchVideos(id: Int32, completion: @escaping ([ResultVideo], Error?) -> ()) {
+        let token = "5fff233cf139639b37ee955e7a852f34"
+    //        https://api.themoviedb.org/3/movie/632632/videos?api_key=5fff233cf139639b37ee955e7a852f34&language=en-US
+        let URL_BASE = "https://api.themoviedb.org/3/movie/\(id)/videos?api_key=\(token)&language=en-US"
+        guard let url = URL(string: URL_BASE) else {return}
+        
+        URLSession.shared.dataTask(with: url) { (data, resp, err) in
+            if let err = err {
+                print("Failed to fetch apps:", err)
+                completion([], nil)
+                return
+            }
+    //                        print(data)
+    //                        print(String(data: data!, encoding: .utf8))
+            guard let data = data else {return}
+            
+            do {
+                let searchResult = try JSONDecoder().decode(ResultsVideo.self, from: data)
+    //                print(searchResult)
+                completion(searchResult.results, nil)
+            } catch let jsonErr {
+                debugPrint("Failed to decode json:", jsonErr)
+                completion([], jsonErr)
+            }
+                    
+        }.resume()
+    }
+    
 }
+
+
+
+
+
 
 // MARK:- Struct to decode ApiResponser with Generics Data to api rest 
 

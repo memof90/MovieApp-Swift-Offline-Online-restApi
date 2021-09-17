@@ -47,7 +47,16 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         setupSearchBar()
         NetworkServicesCoreData()
         fetchDataToCoreData()
+    
     }
+    
+//    func video () {
+//
+//        NetworkServiesMovies.shared.fetchVideos(id: 632632) { resp, err in
+//            print("hello aqui mi reponse\(resp)")
+//        }
+//
+//    }
     
 //    MARK: - setupSearchBar
     fileprivate func setupSearchBar() {
@@ -138,6 +147,10 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         if movies!.count > 0 && indexPath.row < movies!.count {
             cell.movies = movies?[indexPath.item]
         }
+//        let cells = (movies?[indexPath.item].id)!
+//        NetworkServiesMovies.shared.fetchVideos(id: cells) { resp, err in
+//            print("hello aqui mi reponse\(resp)")
+//        }
         
         return cell
     }

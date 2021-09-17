@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SDWebImage
+import Kingfisher
 
 class PopulaViewCell: UICollectionViewCell {
     //    MARK: - property observers to pass data to cell to controller each change to property
@@ -19,12 +19,22 @@ class PopulaViewCell: UICollectionViewCell {
     func setupData() {
         guard let movies = movies else { return }
         if let url = URL(string: "https://image.tmdb.org/t/p/original\(movies.poster_path)") {
-            imagePath.sd_setImage(with: url)
+            imagePath.kf.indicatorType = .activity
+            imagePath.kf.setImage(
+                with: url,
+                options: [
+                    .scaleFactor(UIScreen.main.scale),
+                    .transition(.fade(1)),
+                    .cacheOriginalImage
+                
+                ]
+            )
         }
         
         nameLabel.text = movies.title
         ratingLabel.text = movies.vote_average.toString()
         dateLabel.text = movies.release_date
+        
         
     }
     
@@ -85,17 +95,41 @@ class PopulaViewCell: UICollectionViewCell {
             }()
     
 //    MARK: - Button WatchList
-    let getWhatchButton: UIButton = {
+    lazy var getWhatchButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("WatchList", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
         button.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        button.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 32).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.layer.cornerRadius = 16
+        button.addTarget(self, action: #selector(didTapMyButton), for: .touchUpInside)
         return button
     }()
+    
+    @objc func didTapMyButton(sender:UIButton!) {
+        print("Tapped it!")
+    }
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+
+        guard isUserInteractionEnabled else { return nil }
+
+        guard !isHidden else { return nil }
+
+        guard alpha >= 0.01 else { return nil }
+
+        guard self.point(inside: point, with: event) else { return nil }
+
+
+        // add one of these blocks for each button in our collection view cell we want to actually work
+//        if self.getWhatchButton.point(inside: convert(point, to: myButton), with: event) {
+//            return self.myButton
+//        }
+
+        return super.hitTest(point, with: event)
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

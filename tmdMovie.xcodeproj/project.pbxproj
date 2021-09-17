@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D17BC1D26F432C300B2F548 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17BC1C26F432C300B2F548 /* Video.swift */; };
 		8D19512D26ED8AEB008BA371 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19512C26ED8AEB008BA371 /* Popular.swift */; };
 		8D19513126ED8EBA008BA371 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19513026ED8EBA008BA371 /* DatabaseHandler.swift */; };
 		8D301EDF26EFC9F800F5C66F /* NetworkServicesMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D301EDE26EFC9F800F5C66F /* NetworkServicesMovies.swift */; };
@@ -85,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		26317A54107D3E52FE81F3ED /* Pods-tmdMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdMovie.debug.xcconfig"; path = "Target Support Files/Pods-tmdMovie/Pods-tmdMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		8D17BC1C26F432C300B2F548 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8D19512C26ED8AEB008BA371 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
 		8D19513026ED8EBA008BA371 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		8D301EDE26EFC9F800F5C66F /* NetworkServicesMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesMovies.swift; sourceTree = "<group>"; };
@@ -182,6 +184,14 @@
 				E5E4A79A3C554904C9C07F71 /* Pods-tmdMovie.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D17BC1B26F432A100B2F548 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8D17BC1C26F432C300B2F548 /* Video.swift */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		8D19512E26ED8E77008BA371 /* DataManager */ = {
@@ -435,6 +445,7 @@
 		8DD036F826EC157B005D4296 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8D17BC1B26F432A100B2F548 /* Videos */,
 				8D6BADA326F16FEB000EB1AF /* Search */,
 				8D19512E26ED8E77008BA371 /* DataManager */,
 				8DD036FC26EC15AC005D4296 /* DecodeNsObject.swift */,
@@ -688,6 +699,7 @@
 				8DD036FF26EC15C9005D4296 /* TopRated.swift in Sources */,
 				8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */,
 				8DD0370326EC16A2005D4296 /* MovieNetworkServices.swift in Sources */,
+				8D17BC1D26F432C300B2F548 /* Video.swift in Sources */,
 				8D6BAD8526F11489000EB1AF /* TopRatedViewController.swift in Sources */,
 				8D6BADA526F16FFF000EB1AF /* Search.swift in Sources */,
 				8D301EE626F0161200F5C66F /* PopularController.swift in Sources */,

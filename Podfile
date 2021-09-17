@@ -6,6 +6,8 @@ target 'tmdMovie' do
   use_frameworks!
 
   pod 'SDWebImage', '~> 5.0'
+  pod 'Kingfisher'
+
   # Pods for tmdMovie
 
 end
