@@ -71,6 +71,7 @@
 		8DD0370326EC16A2005D4296 /* MovieNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370226EC16A2005D4296 /* MovieNetworkServices.swift */; };
 		8DD0370626EC2030005D4296 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370526EC2030005D4296 /* MD5.swift */; };
 		8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0370726EC3CF7005D4296 /* APIError.swift */; };
+		8DEF3D9A26F51BDB00C7EB79 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF3D9926F51BDB00C7EB79 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif */; };
 		BFED81A1463C1519E5C48BE1 /* Pods_tmdMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53CBF48D5D9B036D6E74C7E /* Pods_tmdMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -154,6 +155,7 @@
 		8DD0370226EC16A2005D4296 /* MovieNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworkServices.swift; sourceTree = "<group>"; };
 		8DD0370526EC2030005D4296 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		8DD0370726EC3CF7005D4296 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8DEF3D9926F51BDB00C7EB79 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif"; sourceTree = "<group>"; };
 		E5E4A79A3C554904C9C07F71 /* Pods-tmdMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdMovie.release.xcconfig"; path = "Target Support Files/Pods-tmdMovie/Pods-tmdMovie.release.xcconfig"; sourceTree = "<group>"; };
 		F53CBF48D5D9B036D6E74C7E /* Pods_tmdMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -372,6 +374,7 @@
 		8D753F5926F3EBD700272DD5 /* ScreenApp */ = {
 			isa = PBXGroup;
 			children = (
+				8DEF3D9926F51BDB00C7EB79 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif */,
 				8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */,
 				8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */,
 				8D753F5C26F3EC2300272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.27.21 p. m..png */,
@@ -623,6 +626,7 @@
 				8D753F7C26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.37.00 p. m..png in Resources */,
 				8DD036EE26EC0E6B005D4296 /* Assets.xcassets in Resources */,
 				8D753F7426F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.41.43 p. m..png in Resources */,
+				8DEF3D9A26F51BDB00C7EB79 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif in Resources */,
 				8D753F7A26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.31.34 p. m..png in Resources */,
 				8DD036E926EC0E68005D4296 /* Main.storyboard in Resources */,
 				8D753F8226F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.40.10 p. m..png in Resources */,
