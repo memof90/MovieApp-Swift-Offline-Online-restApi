@@ -3,6 +3,31 @@ This is a app with Swift, Programatically, RestApi, Generics, CoreData and Allow
 
 ## How To use This app
 
+## Entregables 
+
+- [x] Consumir Api the peliculas TMDB
+- [x] Debe tener tres categorias Popular, Top Rated, Upcomig
+- [x] Cada Pelicula y/o serie debe poder previsualizar su detalle
+- [x] Debe funcional tanto online como Offline 
+- [x] Debe tener Un Buscador Online 
+
+## Extras 
+
+- [x] Vista PROGRAMATICALLY hecha toda con codigo sin ambargo fue un reto aunque se usar storyboard y swift ui me quise retar gracias a Dios se Logro
+- [x] Trasiciones, Animacion UX/UX Aplicado a cada Vista y en Search Online cuanto se busca y el buscador offline 
+- [x] Prubas unitarias realice pruebas unitarias aplicadas a los servicos y consume de la api status 200 y llamado de la api ademas a Core data y un test de perfoman 
+- [ ] Visualizacion de videos en el detalle de cada item en **PROCESO**
+
+## Preguntas Responabilidad Unica
+
+- El principio de responsabilidad unica es el Primer principio **Solid** en ingles Single Responsability en este caso una clase debe tener una unica responsabilidad es decir que si tengo multiples responsabilidades aplicadas a una clase se romperia este principio un ejemplo sencillo seria supongamos que tenga un clase login y esta tenga multiples responsabilidades como autenticacion, el decode del servicio y el guardar la informacion en este caso existiria 3 responsabilidades las cuales rompen el principio de responsbilidad unica esta ejecutando 3 repoonsabilidades en una sola clase para solucionarlo se podria estraer estas tres responsabilidades en otras clases mas pequeñas y este se creo con el proposito de estruturar un codigo mas limpio y organizado y entendible asi como regir por un parametro todos los codigos con el fin de que haya un estandar del codigo y cualquiera pueda modificar y entender tu codigo y asi reducir la fragilidad del codigo y permitir crear clases reusables de facil mantenimiento y poder separar el codigo el bloques pequeños.
+
+## Codigo Limpio 
+- Para mi un codigo limpio primero es el que esta bien estructurado en este caso con un patron de diseño MVC, MMVV, VIPER, MVP segundo un proyecto debe tener una logica de estruturación y nombres logicos de cada folder, tambien debe tener una buena documentacion, comentarios que permitan entender mejor el codigo las funciones o variables, y para finalizar un buen codigo es aquel que permite la refactorización del codigo para hacerlo mas limpio que al final del dia es una de las mejores practicas si haces algo pero lo puedes simplicar con mas logica entonces seria un codigo limpio por ultimo aplicar un buen testing y los principios Solid para hacer componentes reutilizables en bloques mas pequeños.
+
+## Patron de Diseño 
+ I CAN USE MVC in future implement better implementation MMVV OR VIPER 
+ 
 ## Demo App 
 
 <table>
@@ -175,7 +200,7 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true"></td>
   </tr>
  </table>
- 
+
  ## Testing 
  
  <table>
@@ -190,9 +215,17 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
  </table>
  
 
+## NEW FREATURES UPComing 
+
+- [ ] Implemeting Videos into App
+- [ ] Create new Better model maybe to LocalDataBase
+- [ ] Create Interface with Figma to create better Interface 
+- [ ] Create more Animations to Views 
+
+## Example NEW Implementaion 
 
 
-
+<img src="https://pbs.twimg.com/media/E-URuLaWEAIT8sI?format=jpg&name=medium">
 
 
 
