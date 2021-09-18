@@ -154,5 +154,22 @@ extension PopularViewController {
         let Controller = VideosPopularController()
         Controller.navigationItem.title = "Videos"
         navigationController?.pushViewController(Controller, animated: true)
+        Controller.didselectHandler = {
+            let id: ()? = self.movies?.forEach {
+                print("Hello segundo Print: \($0.id)")
+                NetworkServiesMovies.shared.fetchVideos(id: $0.id) { resp, err in
+                    print(resp)
+//                    Controller.movies = resp
+                    Controller.appVideos = resp
+                }
+            }
+        }
+//        let id: ()? = movies?.forEach {
+//            print("Hello segundo Print: \($0.id)")
+//            NetworkServiesMovies.shared.fetchVideos(id: $0.id) { resp, err in
+//                print(resp)
+//            }
+//
+//        }
     }
 }
