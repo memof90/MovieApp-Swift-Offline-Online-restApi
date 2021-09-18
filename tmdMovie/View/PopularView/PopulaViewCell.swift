@@ -107,24 +107,6 @@ class PopulaViewCell: UICollectionViewCell {
         button.isEnabled = true
         return button
     }()
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-
-        guard isUserInteractionEnabled else { return nil }
-
-        guard !isHidden else { return nil }
-
-        guard alpha >= 0.01 else { return nil }
-
-        guard self.point(inside: point, with: event) else { return nil }
-
-
-        // add one of these blocks for each button in our collection view cell we want to actually work
-//        if self.getWhatchButton.point(inside: convert(point, to: myButton), with: event) {
-//            return self.myButton
-//        }
-
-        return super.hitTest(point, with: event)
-    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

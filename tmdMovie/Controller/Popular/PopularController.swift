@@ -137,7 +137,7 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         if movies!.count > 0 && indexPath.row < movies!.count {
             cell.movies = movies?[indexPath.item]
         }
-        
+  
 //        MARK: - Use to pass action to button
         cell.getWhatchButton.tag = indexPath.row
         cell.getWhatchButton.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)

@@ -9,6 +9,10 @@ import UIKit
 
 
 class VideosPopularController: BaseListController {
+    
+        var myStringValue:Int?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .cyan
