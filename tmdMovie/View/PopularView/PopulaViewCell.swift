@@ -104,14 +104,9 @@ class PopulaViewCell: UICollectionViewCell {
         button.widthAnchor.constraint(equalToConstant: 100).isActive = true
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.layer.cornerRadius = 16
-        button.addTarget(self, action: #selector(didTapMyButton), for: .touchUpInside)
+        button.isEnabled = true
         return button
     }()
-    
-    @objc func didTapMyButton(sender:UIButton!) {
-        print("Tapped it!")
-    }
-    
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
 
         guard isUserInteractionEnabled else { return nil }

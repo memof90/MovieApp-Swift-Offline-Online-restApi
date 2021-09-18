@@ -50,14 +50,6 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
     
     }
     
-//    func video () {
-//
-//        NetworkServiesMovies.shared.fetchVideos(id: 632632) { resp, err in
-//            print("hello aqui mi reponse\(resp)")
-//        }
-//
-//    }
-    
 //    MARK: - setupSearchBar
     fileprivate func setupSearchBar() {
         definesPresentationContext = true
@@ -114,8 +106,6 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
 //                    movies = database.fetch(Popular.self)
         }
     
-//    var didselectHandler: (() -> ())?
-  
     //    MARK: - Protocols CollectionsViews
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movies = movies?[indexPath.item] else { return }
@@ -147,11 +137,22 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         if movies!.count > 0 && indexPath.row < movies!.count {
             cell.movies = movies?[indexPath.item]
         }
-//        let cells = (movies?[indexPath.item].id)!
-//        NetworkServiesMovies.shared.fetchVideos(id: cells) { resp, err in
-//            print("hello aqui mi reponse\(resp)")
-//        }
         
+//        MARK: - Use to pass action to button
+        cell.getWhatchButton.tag = indexPath.row
+        cell.getWhatchButton.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)
         return cell
+    }
+    
+}
+
+// MARK: - Extension to obtain method OBJC to pass action button
+extension PopularViewController {
+//    MARK: Action to push ViewButton
+    @objc func tapButton(sender: UIButton!) {
+        print("buttonTapped")
+        let Controller = VideosPopularController()
+        Controller.navigationItem.title = "Videos"
+        navigationController?.pushViewController(Controller, animated: true)
     }
 }
