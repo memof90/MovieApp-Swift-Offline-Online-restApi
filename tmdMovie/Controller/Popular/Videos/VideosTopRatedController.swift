@@ -24,10 +24,13 @@ class VideosTopRatedController: BaseListController, UICollectionViewDelegateFlow
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .white
         
         //        Allow register identifier cell
         collectionView.register(VideosTopRatedViewCell.self, forCellWithReuseIdentifier: cellId)
+        
+        //        the title is more small Navegation item title
+                    navigationItem.largeTitleDisplayMode = .never
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -43,7 +46,9 @@ class VideosTopRatedController: BaseListController, UICollectionViewDelegateFlow
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! VideosTopRatedViewCell
         if movies?.count ?? 0 > 0 && indexPath.row < movies?.count ?? 0 {
-                cell.nameLabel.text = movies?[indexPath.row].name
+//                cell.nameLabel.text = movies?[indexPath.row].name
+            cell.videosTopRated =  movies?[indexPath.item]
+
             }
                 return cell
     }

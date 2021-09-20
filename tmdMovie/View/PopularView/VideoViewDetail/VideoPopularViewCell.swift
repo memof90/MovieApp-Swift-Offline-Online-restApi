@@ -45,18 +45,6 @@ class VideoPopularViewCell: UICollectionViewCell {
         return uiView
     }()
     
-    let UiView: UIView = {
-        let uiview = UIView()
-        uiview.backgroundColor = .green
-        uiview.layer.cornerRadius = 8
-        uiview.clipsToBounds = true
-        uiview.widthAnchor.constraint(equalToConstant: 335).isActive = true
-        uiview.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        uiview.layer.borderWidth = 0.5
-        uiview.layer.borderColor = UIColor(white: 0.5, alpha: 0.5).cgColor
-        uiview.contentMode = .scaleAspectFill
-        return uiview
-    }()
     
    lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView()

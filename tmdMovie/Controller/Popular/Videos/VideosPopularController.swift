@@ -32,6 +32,9 @@ class VideosPopularController: BaseListController, UICollectionViewDelegateFlowL
         //        Allow register identifier cell
         collectionView.register(VideoPopularViewCell.self, forCellWithReuseIdentifier: cellId)
         
+        //        the title is more small Navegation item title
+                    navigationItem.largeTitleDisplayMode = .never
+        
     }
     
 //        var didselectHandler: (() -> ())?
