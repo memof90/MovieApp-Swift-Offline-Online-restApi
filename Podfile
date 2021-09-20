@@ -6,6 +6,7 @@ target 'tmdMovie' do
   use_frameworks!
 
   pod 'Kingfisher'
+  pod 'youtube-ios-player-helper'
 
   # Pods for tmdMovie
 

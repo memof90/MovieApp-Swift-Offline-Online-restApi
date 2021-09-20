@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 
 class VideosPopularController: BaseListController, UICollectionViewDelegateFlowLayout {
@@ -26,10 +27,11 @@ class VideosPopularController: BaseListController, UICollectionViewDelegateFlowL
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .cyan
+        collectionView.backgroundColor = .white
         
         //        Allow register identifier cell
         collectionView.register(VideoPopularViewCell.self, forCellWithReuseIdentifier: cellId)
+        
     }
     
 //        var didselectHandler: (() -> ())?
@@ -47,8 +49,10 @@ class VideosPopularController: BaseListController, UICollectionViewDelegateFlowL
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! VideoPopularViewCell
         if movies?.count ?? 0 > 0 && indexPath.row < movies?.count ?? 0 {
-                cell.nameLabel.text = movies?[indexPath.row].name
+//                cell.nameLabel.text = movies?[indexPath.row].name
+            cell.videosPopular =  movies?[indexPath.item]
             }
-                return cell
+        
+        return cell
     }
 }
