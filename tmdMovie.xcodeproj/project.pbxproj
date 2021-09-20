@@ -65,6 +65,7 @@
 		8D8C3A2426F8ED8100778BB8 /* VideosUpcomingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2326F8ED8100778BB8 /* VideosUpcomingController.swift */; };
 		8D8C3A2826F8EE5B00778BB8 /* VideosTopRatedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2726F8EE5B00778BB8 /* VideosTopRatedViewCell.swift */; };
 		8D8C3A2A26F8EE6F00778BB8 /* VideosUpcommingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2926F8EE6F00778BB8 /* VideosUpcommingViewCell.swift */; };
+		8DBFD4FC26F939DB009A8F50 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-20 at 16.50.18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8DBFD4FB26F939DA009A8F50 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-20 at 16.50.18.gif */; };
 		8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E126EC0E68005D4296 /* AppDelegate.swift */; };
 		8DD036E426EC0E68005D4296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E326EC0E68005D4296 /* SceneDelegate.swift */; };
 		8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E526EC0E68005D4296 /* ViewController.swift */; };
@@ -153,6 +154,7 @@
 		8D8C3A2326F8ED8100778BB8 /* VideosUpcomingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUpcomingController.swift; sourceTree = "<group>"; };
 		8D8C3A2726F8EE5B00778BB8 /* VideosTopRatedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTopRatedViewCell.swift; sourceTree = "<group>"; };
 		8D8C3A2926F8EE6F00778BB8 /* VideosUpcommingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUpcommingViewCell.swift; sourceTree = "<group>"; };
+		8DBFD4FB26F939DA009A8F50 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-20 at 16.50.18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Simulator Screen Recording - iPhone 12 Pro - 2021-09-20 at 16.50.18.gif"; sourceTree = "<group>"; };
 		8DD036DE26EC0E68005D4296 /* tmdMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD036E126EC0E68005D4296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD036E326EC0E68005D4296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 		8D753F5926F3EBD700272DD5 /* ScreenApp */ = {
 			isa = PBXGroup;
 			children = (
+				8DBFD4FB26F939DA009A8F50 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-20 at 16.50.18.gif */,
 				8DEF3D9926F51BDB00C7EB79 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-17 at 13.50.10.gif */,
 				8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */,
 				8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */,
@@ -679,6 +682,7 @@
 				8D753F7526F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.01 p. m..png in Resources */,
 				8D753F8626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png in Resources */,
 				8D753F7B26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.39.15 p. m..png in Resources */,
+				8DBFD4FC26F939DB009A8F50 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-20 at 16.50.18.gif in Resources */,
 				8D753F7826F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.43.37 p. m..png in Resources */,
 				8D753F8426F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.44.31 p. m..png in Resources */,
 				8D753F7626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.38.38 p. m..png in Resources */,
