@@ -16,7 +16,7 @@ This is a app with Swift, Programatically, RestApi, Generics, CoreData and Allow
 - [x] Vista PROGRAMATICALLY hecha toda con codigo sin ambargo fue un reto aunque se usar storyboard y swift ui me quise retar gracias a Dios se Logro
 - [x] Trasiciones, Animacion UX/UX Aplicado a cada Vista y en Search Online cuanto se busca y el buscador offline 
 - [x] Prubas unitarias realice pruebas unitarias aplicadas a los servicos y consume de la api status 200 y llamado de la api ademas a Core data y un test de perfoman 
-- [ ] Visualizacion de videos en el detalle de cada item en **PROCESO**
+- [x] Visualizacion de videos en el detalle de cada item en **Ready**
 
 ## Preguntas Responabilidad Unica
 
@@ -33,11 +33,20 @@ This is a app with Swift, Programatically, RestApi, Generics, CoreData and Allow
  <table>
   <tr>
     <td>Animations images</td>
+    <td>Implenting Videos</td>
+    <td>Videos Controls</td>
+   <td>Video Example</td>
   </tr>
   <tr>
     <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20-%202021-09-17%20at%2013.50.10.gif?raw=true" width=270 height=480></td>
+       <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-09-20%20at%2017.15.11.png?raw=true" width=270 height=480></td>
+          <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-09-20%20at%2017.15.30.png?raw=true" width=270 height=480></td>
+             <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-09-20%20at%2017.15.23.png?raw=true" width=270 height=480></td>
   </tr>
  </table>
+ ## Videos example new app 
+ 
+ <img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20-%202021-09-17%20at%2013.50.10.gif?raw=true" width=270 height=480>
  
 ## Demo App 
 
@@ -115,9 +124,7 @@ https://www.themoviedb.org/?language=es
 
 ### Information to Project 
 
-the project only use Two Libraries External **SDWebImage** to consume image the api and **Swift-YouTube-Player** to consume Video to app not more the consume 
-to the app is only with **Generics** and **URLSession** that provides APi to apple to save the Data in the Storage I can Use **CoreData** and NSManagedObject to
-strutured the Model To the  View I don't Use StoryBoard and SwiftUI all View is Doing with **PROGRAMATICALLY**
+the project only use Two Libraries External **Kingfisher** to consume image and save in cache the api and **Youtube-ios-player-helper** to consume Video to app not more the consume to the app is only with **Generics** and **URLSession** that provides APi to apple to save the Data in the Storage I can Use **CoreData** and NSManagedObject to strutured the Model To the  View I don't Use StoryBoard and SwiftUI all View is Doing with **PROGRAMATICALLY**
 
 <img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.41.43%20p.%C2%A0m..png?raw=true" width="200" height="400">
 
