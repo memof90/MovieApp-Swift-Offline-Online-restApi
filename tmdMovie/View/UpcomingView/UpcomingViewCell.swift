@@ -44,6 +44,7 @@ class UpcomingViewCell: UICollectionViewCell {
         dateLabel.text = nil
     }
 
+    var didselectHandlerUpcomming: (() -> ())?
     
 //    MARK: - Image
     let imagePath: UIImageView = {
@@ -94,18 +95,24 @@ class UpcomingViewCell: UICollectionViewCell {
             }()
     
 //    MARK: - Button WatchList
-    let getWhatchButton: UIButton = {
+    lazy var getWhatchButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("WatchList", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
         button.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        button.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 32).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.layer.cornerRadius = 16
+        button.isEnabled = true
+        button.addTarget(self, action: #selector(upcommingButtons), for: .touchUpInside)
         return button
     }()
     
+    @objc func upcommingButtons(sender: UIButton!) {
+        print("tap button")
+        didselectHandlerUpcomming?()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

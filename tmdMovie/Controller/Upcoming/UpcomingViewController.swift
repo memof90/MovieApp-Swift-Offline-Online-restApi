@@ -131,6 +131,17 @@ class UpcomingViewController: BaseListController, UICollectionViewDelegateFlowLa
             cell.movies = movies?[indexPath.item]
         }
         
+        //        MARK: - Use to pass action to button
+                cell.didselectHandlerUpcomming = {
+                    guard let movies = self.movies?[indexPath.item] else { return }
+                    let Controller = VideosUpcommingController()
+                    Controller.navigationItem.title = movies.title
+                    self.navigationController?.pushViewController(Controller, animated: true)
+                    NetworkServiesMovies.shared.fetchVideos(id: movies.id) { resp, err in
+                        Controller.movies = resp
+                    }
+                }
+        
         return cell
     }
 }

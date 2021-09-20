@@ -61,6 +61,10 @@
 		8D753F8626F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */; };
 		8D753F8726F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F7026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png */; };
 		8D753F8926F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */; };
+		8D8C3A2226F8ED6F00778BB8 /* VideosTopRatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2126F8ED6F00778BB8 /* VideosTopRatedController.swift */; };
+		8D8C3A2426F8ED8100778BB8 /* VideosUpcomingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2326F8ED8100778BB8 /* VideosUpcomingController.swift */; };
+		8D8C3A2826F8EE5B00778BB8 /* VideosTopRatedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2726F8EE5B00778BB8 /* VideosTopRatedViewCell.swift */; };
+		8D8C3A2A26F8EE6F00778BB8 /* VideosUpcommingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3A2926F8EE6F00778BB8 /* VideosUpcommingViewCell.swift */; };
 		8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E126EC0E68005D4296 /* AppDelegate.swift */; };
 		8DD036E426EC0E68005D4296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E326EC0E68005D4296 /* SceneDelegate.swift */; };
 		8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD036E526EC0E68005D4296 /* ViewController.swift */; };
@@ -145,6 +149,10 @@
 		8D753F6F26F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.13.15 p. m..png"; sourceTree = "<group>"; };
 		8D753F7026F3EC2600272DD5 /* Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-09-16 a la(s) 3.55.28 p. m..png"; sourceTree = "<group>"; };
 		8D753F8826F3EC4600272DD5 /* Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Grabación de pantalla 2021-09-16 a la(s) 3.59.01 p. m..gif"; sourceTree = "<group>"; };
+		8D8C3A2126F8ED6F00778BB8 /* VideosTopRatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideosTopRatedController.swift; path = tmdMovie/Controller/Popular/Videos/VideosTopRatedController.swift; sourceTree = SOURCE_ROOT; };
+		8D8C3A2326F8ED8100778BB8 /* VideosUpcomingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUpcomingController.swift; sourceTree = "<group>"; };
+		8D8C3A2726F8EE5B00778BB8 /* VideosTopRatedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTopRatedViewCell.swift; sourceTree = "<group>"; };
+		8D8C3A2926F8EE6F00778BB8 /* VideosUpcommingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUpcommingViewCell.swift; sourceTree = "<group>"; };
 		8DD036DE26EC0E68005D4296 /* tmdMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD036E126EC0E68005D4296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD036E326EC0E68005D4296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +311,7 @@
 		8D6BAD8026F113FA000EB1AF /* TopRated */ = {
 			isa = PBXGroup;
 			children = (
+				8D8C3A1F26F8ED3B00778BB8 /* Videos */,
 				8D447B6926F2A34A00D1D7F3 /* Detail */,
 				8D6BAD8426F11489000EB1AF /* TopRatedViewController.swift */,
 			);
@@ -312,6 +321,7 @@
 		8D6BAD8126F11403000EB1AF /* TopRatedView */ = {
 			isa = PBXGroup;
 			children = (
+				8D8C3A2526F8EE2900778BB8 /* VideoViewDetail */,
 				8D447B6F26F2A65200D1D7F3 /* DetailView */,
 				8D6BAD8D26F117CB000EB1AF /* TopRatedViewCell.swift */,
 			);
@@ -321,6 +331,7 @@
 		8D6BAD8226F1140D000EB1AF /* UpcomingView */ = {
 			isa = PBXGroup;
 			children = (
+				8D8C3A2626F8EE3500778BB8 /* VideoViewDetail */,
 				8D447B7026F2A65A00D1D7F3 /* DetailView */,
 				8D6BAD8F26F117E1000EB1AF /* UpcomingViewCell.swift */,
 			);
@@ -330,6 +341,7 @@
 		8D6BAD8326F11418000EB1AF /* Upcoming */ = {
 			isa = PBXGroup;
 			children = (
+				8D8C3A2026F8ED4000778BB8 /* Videos */,
 				8D447B6A26F2A35A00D1D7F3 /* Detail */,
 				8D6BAD8626F115C2000EB1AF /* UpcomingViewController.swift */,
 			);
@@ -423,6 +435,38 @@
 				8D753F6C26F3EC2600272DD5 /* Simulator Screen Recording - iPhone 12 Pro - 2021-09-15 at 22.49.07.gif */,
 			);
 			path = ScreenApp;
+			sourceTree = "<group>";
+		};
+		8D8C3A1F26F8ED3B00778BB8 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8D8C3A2126F8ED6F00778BB8 /* VideosTopRatedController.swift */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		8D8C3A2026F8ED4000778BB8 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8D8C3A2326F8ED8100778BB8 /* VideosUpcomingController.swift */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		8D8C3A2526F8EE2900778BB8 /* VideoViewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8D8C3A2726F8EE5B00778BB8 /* VideosTopRatedViewCell.swift */,
+			);
+			path = VideoViewDetail;
+			sourceTree = "<group>";
+		};
+		8D8C3A2626F8EE3500778BB8 /* VideoViewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8D8C3A2926F8EE6F00778BB8 /* VideosUpcommingViewCell.swift */,
+			);
+			path = VideoViewDetail;
 			sourceTree = "<group>";
 		};
 		8DD036D526EC0E67005D4296 = {
@@ -717,10 +761,12 @@
 				8D301EDF26EFC9F800F5C66F /* NetworkServicesMovies.swift in Sources */,
 				8DD036E626EC0E68005D4296 /* ViewController.swift in Sources */,
 				8D447B7426F2A6EF00D1D7F3 /* DetailUpcomingViewCell.swift in Sources */,
+				8D8C3A2826F8EE5B00778BB8 /* VideosTopRatedViewCell.swift in Sources */,
 				8D19512D26ED8AEB008BA371 /* Popular.swift in Sources */,
 				8DD036FD26EC15AC005D4296 /* DecodeNsObject.swift in Sources */,
 				8D301EE126EFCFA500F5C66F /* MoviesServiceModel.swift in Sources */,
 				8D19513126ED8EBA008BA371 /* DatabaseHandler.swift in Sources */,
+				8D8C3A2426F8ED8100778BB8 /* VideosUpcomingController.swift in Sources */,
 				8D6BAD9C26F15E35000EB1AF /* TopRatedServicesModel.swift in Sources */,
 				8DD036FF26EC15C9005D4296 /* TopRated.swift in Sources */,
 				8DD0370826EC3CF7005D4296 /* APIError.swift in Sources */,
@@ -728,7 +774,9 @@
 				8D17BC1D26F432C300B2F548 /* Video.swift in Sources */,
 				8D23EF6126F695BC00FEB83F /* VideosPopularController.swift in Sources */,
 				8D6BAD8526F11489000EB1AF /* TopRatedViewController.swift in Sources */,
+				8D8C3A2A26F8EE6F00778BB8 /* VideosUpcommingViewCell.swift in Sources */,
 				8D6BADA526F16FFF000EB1AF /* Search.swift in Sources */,
+				8D8C3A2226F8ED6F00778BB8 /* VideosTopRatedController.swift in Sources */,
 				8D301EE626F0161200F5C66F /* PopularController.swift in Sources */,
 				8D6BAD8E26F117CB000EB1AF /* TopRatedViewCell.swift in Sources */,
 				8DD036E226EC0E68005D4296 /* AppDelegate.swift in Sources */,
