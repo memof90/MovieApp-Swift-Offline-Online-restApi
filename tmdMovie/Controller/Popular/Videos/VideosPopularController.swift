@@ -10,8 +10,15 @@ import UIKit
 
 class VideosPopularController: BaseListController, UICollectionViewDelegateFlowLayout {
     
-//    var movies: [ResultVideo]?
-    var appVideos = [ResultVideo]()
+    var movies: [ResultVideo]? {
+        didSet {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+      
+        }
+    }
+//    var appVideos = [ResultVideo]()
     
     //    MARK:- Identifier Cell
         fileprivate let cellId = "id1234"
@@ -22,10 +29,10 @@ class VideosPopularController: BaseListController, UICollectionViewDelegateFlowL
         collectionView.backgroundColor = .cyan
         
         //        Allow register identifier cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(VideoPopularViewCell.self, forCellWithReuseIdentifier: cellId)
     }
     
-        var didselectHandler: (() -> ())?
+//        var didselectHandler: (() -> ())?
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width, height: 350)
@@ -34,14 +41,14 @@ class VideosPopularController: BaseListController, UICollectionViewDelegateFlowL
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return 1
-//        return 5
+
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-                    
-                    
-        
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! VideoPopularViewCell
+        if movies?.count ?? 0 > 0 && indexPath.row < movies?.count ?? 0 {
+                cell.nameLabel.text = movies?[indexPath.row].name
+            }
                 return cell
     }
 }

@@ -139,37 +139,17 @@ class PopularViewController: BaseListController, UICollectionViewDelegateFlowLay
         }
   
 //        MARK: - Use to pass action to button
-        cell.getWhatchButton.tag = indexPath.row
-        cell.getWhatchButton.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)
+        cell.didselectHandler = {
+            guard let movies = self.movies?[indexPath.item] else { return }
+            let Controller = VideosPopularController()
+            Controller.navigationItem.title = movies.title
+            self.navigationController?.pushViewController(Controller, animated: true)
+            NetworkServiesMovies.shared.fetchVideos(id: movies.id) { resp, err in
+                Controller.movies = resp
+            }
+        }
         return cell
     }
     
 }
 
-// MARK: - Extension to obtain method OBJC to pass action button
-extension PopularViewController {
-//    MARK: Action to push ViewButton
-    @objc func tapButton(sender: UIButton!) {
-        print("buttonTapped")
-        let Controller = VideosPopularController()
-        Controller.navigationItem.title = "Videos"
-        navigationController?.pushViewController(Controller, animated: true)
-        Controller.didselectHandler = {
-            let id: ()? = self.movies?.forEach {
-                print("Hello segundo Print: \($0.id)")
-                NetworkServiesMovies.shared.fetchVideos(id: $0.id) { resp, err in
-                    print(resp)
-//                    Controller.movies = resp
-                    Controller.appVideos = resp
-                }
-            }
-        }
-//        let id: ()? = movies?.forEach {
-//            print("Hello segundo Print: \($0.id)")
-//            NetworkServiesMovies.shared.fetchVideos(id: $0.id) { resp, err in
-//                print(resp)
-//            }
-//
-//        }
-    }
-}

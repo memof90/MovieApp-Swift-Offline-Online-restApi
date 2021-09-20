@@ -38,6 +38,8 @@ class PopulaViewCell: UICollectionViewCell {
         
     }
     
+    var didselectHandler: (() -> ())?
+    
     override func prepareForReuse() {
         imagePath.image = nil
         nameLabel.text = nil
@@ -105,8 +107,14 @@ class PopulaViewCell: UICollectionViewCell {
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.layer.cornerRadius = 16
         button.isEnabled = true
+        button.addTarget(self, action: #selector(tapButtons), for: .touchUpInside)
         return button
     }()
+    
+    @objc func tapButtons(sender: UIButton!) {
+        print("tap button")
+        didselectHandler?()
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
